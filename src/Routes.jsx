@@ -17,7 +17,7 @@ const Routes = () => {
       <ScrollToTop />
       <RouterRoutes>
         {/* Define your route here */}
-        <Route path="/" element={<CustomerTransformationsGallery />} />
+        <Route path="/" element={<Homepage />} />
         <Route path="/ingredient-library-transparency-education" element={<IngredientLibrary />} />
         <Route path="/our-story-brand-heritage-values" element={<OurStoryPage />} />
         <Route path="/customer-transformations-social-proof-gallery" element={<CustomerTransformationsGallery />} />
