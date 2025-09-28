@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Core Brand Colors */
+    --color-primary: #202020; /* deep-emerald-800 */
+    --color-primary-foreground: #FFFFFF; /* white */
+    --color-secondary: #D4AF37; /* warm-gold */
+    --color-secondary-foreground: #1C1C1C; /* rich-black */
+    --color-accent: #E8D5B7; /* soft-champagne */
+    --color-accent-foreground: #202020; /* charcoal */
+    
+    /* Background & Surface */
+    --color-background: #f2f2ee; /* warm-ivory */
+    --color-foreground: #202020; /* rich-charcoal */
+    --color-card: #F5F2ED; /* subtle-depth */
+    --color-card-foreground: #202020; /* rich-charcoal */
+    --color-popover: #FFFFFF; /* white */
+    --color-popover-foreground: #202020; /* rich-charcoal */
+    --color-muted: #F5F2ED; /* subtle-depth */
+    --color-muted-foreground: #6B6B6B; /* clear-hierarchy */
+    
+    /* Interactive Elements */
+    --color-border: #E8D5B7; /* soft-champagne */
+    --color-input: #FFFFFF; /* white */
+    --color-ring: #D4AF37; /* warm-gold */
+    
+    /* Status Colors */
+    --color-success: #202020; /* natural-confirmation */
+    --color-success-foreground: #FFFFFF; /* white */
+    --color-warning: #B8860B; /* gentle-urgency */
+    --color-warning-foreground: #FFFFFF; /* white */
+    --color-error: #8B4513; /* warm-concern */
+    --color-error-foreground: #FFFFFF; /* white */
+    --color-destructive: #8B4513; /* warm-concern */
+    --color-destructive-foreground: #FFFFFF; /* white */
+    
+    /* Typography */
+    --font-heading: 'Playfair Display', serif;
+    --font-body: 'Inter', sans-serif;
+    
+    /* Spacing Scale (Golden Ratio) */
+    --spacing-xs: 8px;
+    --spacing-sm: 13px;
+    --spacing-md: 21px;
+    --spacing-lg: 34px;
+    --spacing-xl: 55px;
+    
+    /* Shadows */
+    --shadow-luxury: 0 4px 20px rgba(27, 77, 62, 0.08);
+    --shadow-subtle: 0 2px 8px rgba(27, 77, 62, 0.04);
+    
+    /* Border Radius */
+    --radius-organic: 12px;
+    --radius-sm: 6px;
+    --radius-lg: 16px;
+  }
+  
+  * {
+    @apply border-border;
+  }
+  
+  body {
+    @apply bg-background text-foreground font-body;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-heading;
+  }
+}
+
+@layer components {
+  .luxury-shadow {
+    box-shadow: var(--shadow-luxury);
+  }
+  
+  .subtle-shadow {
+    box-shadow: var(--shadow-subtle);
+  }
+  
+  .organic-border {
+    border-radius: var(--radius-organic);
+  }
+  
+  .golden-gradient {
+    background: linear-gradient(135deg, #D4AF37 0%, #C9A961 100%);
+  }
+  
+  .liquid-animation {
+    animation: liquidFlow 4s ease-in-out infinite alternate;
+  }
+  
+  @keyframes liquidFlow {
+    0% {
+      transform: translateY(0px) rotate(0deg);
+      opacity: 0.8;
+    }
+    100% {
+      transform: translateY(-10px) rotate(2deg);
+      opacity: 1;
+    }
+  }
+  
+  .fade-in-up {
+    animation: fadeInUp 0.6s ease-out forwards;
+  }
+  
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .hover-lift {
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  .hover-lift:hover {
+    transform: translateY(-2px);
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+  
+  @media (prefers-reduced-motion: reduce) {
+    .liquid-animation,
+    .fade-in-up,
+    .hover-lift {
+      animation: none;
+      transition: none;
+    }
+  }
+}
