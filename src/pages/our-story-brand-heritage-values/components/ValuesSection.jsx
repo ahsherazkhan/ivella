@@ -66,7 +66,7 @@ const ValuesSection = () => {
             Principles That Guide Us
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            These core values shape every decision we make, from ingredient sourcing to customer relationships, ensuring Ivella Luxe remains true to its mission.
+            These core values shape every decision we make, from ingredient sourcing to customer relationships, ensuring IVELLA remains true to its mission.
           </p>
         </div>
 

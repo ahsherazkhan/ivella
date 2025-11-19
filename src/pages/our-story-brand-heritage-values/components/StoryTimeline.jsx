@@ -21,7 +21,7 @@ const StoryTimeline = () => {
     {
       year: "2019",
       title: "The Foundation",
-      description: `Ivella Luxe was born in a small laboratory in San Francisco, with the first batch of signature hair oil crafted using ethically sourced ingredients. The name 'Ivella' combines 'Ivy' (representing growth and resilience) with 'Bella' (beauty in Italian).`,
+      description: `IVELLA was born in a small laboratory in San Francisco, with the first batch of signature hair oil crafted using ethically sourced ingredients. The name 'Ivella' combines 'Ivy' (representing growth and resilience) with 'Bella' (beauty in Italian).`,
       image: "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
       icon: "Beaker"
     },
@@ -42,7 +42,7 @@ const StoryTimeline = () => {
     {
       year: "2024",
       title: "The Future",
-      description: `Today, Ivella Luxe serves over 50,000 women worldwide while maintaining our commitment to small-batch production and ethical sourcing. Our vision extends beyond beauty to creating a global network of empowered women supporting each other's success.`,
+      description: `Today, IVELLA serves over 50,000 women worldwide while maintaining our commitment to small-batch production and ethical sourcing. Our vision extends beyond beauty to creating a global network of empowered women supporting each other's success.`,
       image: "https://images.pexels.com/photos/3762875/pexels-photo-3762875.jpeg?auto=compress&cs=tinysrgb&w=800",
       icon: "Star"
     }
@@ -60,7 +60,7 @@ const StoryTimeline = () => {
             The Story Behind Every Drop
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            From a personal transformation to a global movement, discover how Ivella Luxe became a beacon of conscious luxury in the beauty industry.
+            From a personal transformation to a global movement, discover how IVELLA became a beacon of conscious luxury in the beauty industry.
           </p>
         </div>
 

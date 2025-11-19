@@ -7,7 +7,7 @@ const CustomerImpactSection = () => {
     {
       name: "Maria Santos",
       location: "Argan Cooperative, Morocco",
-      story: `"Working with Ivella Luxe has transformed not just my income, but my entire community. The fair trade premiums have allowed us to build a school for our children and invest in sustainable farming equipment."`,
+      story: `"Working with IVELLA has transformed not just my income, but my entire community. The fair trade premiums have allowed us to build a school for our children and invest in sustainable farming equipment."`,
       image: "https://images.unsplash.com/photo-1544967882-6abaa7b2aa9b?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80",
       impact: "Supports 45 families",
       product: "Argan Oil"
@@ -92,7 +92,7 @@ const CustomerImpactSection = () => {
             Your Purchase, Their Future
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Every Ivella Luxe product you choose creates ripple effects of positive change in communities worldwide. Meet the women whose lives are transformed through our partnerships.
+            Every IVELLA product you choose creates ripple effects of positive change in communities worldwide. Meet the women whose lives are transformed through our partnerships.
           </p>
         </div>
 
@@ -191,7 +191,7 @@ const CustomerImpactSection = () => {
                 See How Your Purchase Creates Change
               </h3>
               <p className="text-muted-foreground leading-relaxed">
-                Every product you choose from Ivella Luxe directly contributes to our impact fund. Here's how your purchases translate into real-world positive change for women and communities worldwide.
+                Every product you choose from IVELLA directly contributes to our impact fund. Here's how your purchases translate into real-world positive change for women and communities worldwide.
               </p>
             </div>
 

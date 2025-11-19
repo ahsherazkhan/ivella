@@ -64,7 +64,7 @@ const Header = () => {
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         isScrolled 
           ? 'bg-background/95 backdrop-blur-md shadow-subtle' 
-          : 'bg-transparent'
+          : 'bg-black/20 backdrop-blur-sm'
       }`}
     >
       <div className="w-full">
@@ -75,23 +75,10 @@ const Header = () => {
               href="/homepage-luxury-beauty-immersive-experience"
               className="flex items-center space-x-3 hover:opacity-80 transition-opacity duration-200"
             >
-              <div className="w-8 h-8 bg-golden-gradient rounded-full flex items-center justify-center">
-                <svg 
-                  width="20" 
-                  height="20" 
-                  viewBox="0 0 24 24" 
-                  fill="none" 
-                  className="text-white"
-                >
-                  <path 
-                    d="M12 2C8.5 2 6 4.5 6 8c0 2.5 1.5 4.5 3 6 1 1 2 2 3 4 1-2 2-3 3-4 1.5-1.5 3-3.5 3-6 0-3.5-2.5-6-6-6z" 
-                    fill="currentColor"
-                  />
-                  <circle cx="12" cy="8" r="2" fill="rgba(255,255,255,0.3)" />
-                </svg>
-              </div>
-              <span className="font-heading text-2xl font-semibold text-primary">
-                Ivella Luxe
+              <span className={`font-heading text-2xl font-semibold transition-colors duration-300 ${
+                isScrolled ? 'text-primary' : 'text-white'
+              }`}>
+                IVELLA
               </span>
             </a>
           </div>
@@ -102,7 +89,11 @@ const Header = () => {
               <a
                 key={item?.name}
                 href={item?.path}
-                className="text-foreground hover:text-primary transition-colors duration-200 font-medium"
+                className={`transition-colors duration-200 font-medium ${
+                  isScrolled 
+                    ? 'text-foreground hover:text-primary' 
+                    : 'text-white/90 hover:text-white'
+                }`}
               >
                 {item?.name}
               </a>
@@ -110,7 +101,11 @@ const Header = () => {
             
             {/* More Dropdown */}
             <div className="relative group">
-              <button className="flex items-center space-x-1 text-foreground hover:text-primary transition-colors duration-200 font-medium">
+              <button className={`flex items-center space-x-1 transition-colors duration-200 font-medium ${
+                isScrolled 
+                  ? 'text-foreground hover:text-primary' 
+                  : 'text-white/90 hover:text-white'
+              }`}>
                 <span>More</span>
                 <Icon name="ChevronDown" size={16} />
               </button>
@@ -160,7 +155,11 @@ const Header = () => {
           {/* Mobile Menu Button */}
           <button
             onClick={toggleMenu}
-            className="lg:hidden p-2 text-foreground hover:text-primary transition-colors duration-200"
+            className={`lg:hidden p-2 transition-colors duration-200 ${
+              isScrolled 
+                ? 'text-foreground hover:text-primary' 
+                : 'text-white/90 hover:text-white'
+            }`}
             aria-label="Toggle menu"
           >
             <Icon name={isMenuOpen ? "X" : "Menu"} size={24} />

@@ -20,8 +20,9 @@ const HeroSection = () => {
       // backgroundImage: "https://images.unsplash.com/photo-1593129747951-db31f82963da?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDI1fHx8ZW58MHx8fHx8",
       // backgroundImage: "https://images.unsplash.com/photo-1710587385407-8305a4515ca1?q=80&w=987&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       // backgroundImage: "https://images.unsplash.com/photo-1712481846921-d5df6dc4abfd?q=80&w=2340&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      backgroundImage: "https://images.unsplash.com/photo-1638640983932-dea21424691d?q=80&w=2340&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      videoUrl: "https://player.vimeo.com/video/example"
+      // backgroundImage: "https://images.unsplash.com/photo-1638640983932-dea21424691d?q=80&w=2340&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      // backgroundImage: "/assets/1.jpg",
+      backgroundVideo: "/assets/ivella simple video.mp4"
     },
     // {
     //   id: 2,
@@ -57,10 +58,23 @@ const HeroSection = () => {
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-background">
       {/* Background Video/Image */}
       <div className="absolute inset-0 z-0">
-        <div 
-          className="absolute inset-0 bg-cover bg-center bg-no-repeat transition-all duration-1000 ease-in-out"
-          style={{ backgroundImage: `url(${currentHero?.backgroundImage})` }}
-        />
+        {currentHero?.backgroundVideo ? (
+          <video
+            autoPlay
+            loop
+            muted
+            playsInline
+            className="absolute inset-0 w-full h-full object-cover"
+            onLoadedData={() => setIsVideoLoaded(true)}
+          >
+            <source src={currentHero.backgroundVideo} type="video/mp4" />
+          </video>
+        ) : currentHero?.backgroundImage ? (
+          <div 
+            className="absolute inset-0 bg-cover bg-center bg-no-repeat transition-all duration-1000 ease-in-out"
+            style={{ backgroundImage: `url(${currentHero.backgroundImage})` }}
+          />
+        ) : null}
         <div className="absolute inset-0 bg-gradient-to-r from-black/60 via-black/30 to-transparent" />
         
         {/* Floating Oil Drops Animation */}
@@ -81,9 +95,9 @@ const HeroSection = () => {
       </div>
       {/* Content */}
       <div className="relative z-10 w-full max-w-7xl mx-auto px-6 lg:px-8">
-        <div className="grid lg:grid-cols-2 gap-12 items-center min-h-screen py-25">
+        <div className="flex items-center justify-center min-h-screen py-25">
           {/* Text Content */}
-          <div className="text-center lg:text-left fade-in-up">
+          <div className="text-center fade-in-up max-w-4xl">
             <div className="mb-6">
               <h1 className="font-heading text-4xl md:text-5xl lg:text-6xl font-semibold text-white mb-6 leading-tight">
                 {currentHero?.title}
@@ -91,13 +105,13 @@ const HeroSection = () => {
               <p className="text-xl md:text-2xl text-white/90 font-light mb-8">
                 {currentHero?.subtitle}
               </p>
-              <p className="text-lg text-white/80 max-w-2xl mx-auto lg:mx-0 leading-relaxed">
+              <p className="text-lg text-white/80 max-w-2xl mx-auto leading-relaxed">
                 {currentHero?.description}
               </p>
             </div>
 
             {/* CTAs */}
-            <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button
                 variant="default"
                 size="lg"
@@ -121,7 +135,7 @@ const HeroSection = () => {
             </div>
 
             {/* Trust Indicators */}
-            <div className="flex flex-wrap items-center justify-center lg:justify-start gap-6 mt-12 text-white/70">
+            <div className="flex flex-wrap items-center justify-center gap-6 mt-12 text-white/70">
               <div className="flex items-center gap-2">
                 <Icon name="Shield" size={20} />
                 <span className="text-sm">Cruelty-Free</span>
@@ -138,13 +152,12 @@ const HeroSection = () => {
           </div>
 
           {/* Product Showcase */}
-          <div className="relative flex justify-center lg:justify-end">
+          {/* <div className="relative flex justify-center lg:justify-end">
             <div className="relative">
-              {/* Main Product Image */}
               <div className="relative w-80 h-96 lg:w-96 lg:h-[500px] rounded-organic overflow-hidden luxury-shadow hover-lift">
                 <img
-                  src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
-                  alt="Ivella Luxe Hair Oil Collection"
+                  src="/assets/1.jpg"
+                  alt="IVELLA Hair Oil Collection"
                   className="w-full h-full object-cover"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent" />
@@ -162,7 +175,7 @@ const HeroSection = () => {
                 </div>
               </div>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
       {/* Slide Indicators */}

@@ -19,8 +19,8 @@ const SignatureCollectionShowcase = () => {
   // Mock product data
   const product = {
     id: "argan-elixir-001",
-    name: "Moroccan Argan Elixir",
-    description: "A luxurious blend of cold-pressed Moroccan argan oil and botanical extracts, designed to nourish, strengthen, and restore your hair's natural radiance. This premium elixir transforms dry, damaged hair into silky, manageable locks with a healthy shine.",
+    name: "IVELLA Signature Oil",
+    description: "A luxurious blend of cold-pressed IVELLA Signature Oil and botanical extracts, designed to nourish, strengthen, and restore your hair's natural radiance. This premium elixir transforms dry, damaged hair into silky, manageable locks with a healthy shine.",
     price: 89.99,
     originalPrice: 119.99,
     rating: 4.8,
@@ -80,12 +80,12 @@ const SignatureCollectionShowcase = () => {
   // Mock ingredients data
   const ingredients = [
     {
-      name: "Moroccan Argan Oil",
+      name: "IVELLA Signature Oil",
       origin: "Atlas Mountains, Morocco",
       concentration: "45%",
       primaryBenefit: "Deep Nourishment",
       image: "https://images.pexels.com/photos/4041392/pexels-photo-4041392.jpeg?w=200&h=200&fit=crop&crop=center",
-      sourcingStory: "Our Moroccan Argan Oil is cold-pressed by women's cooperatives in the Atlas Mountains, supporting local communities while ensuring the highest quality. Each tree is hand-selected, and the kernels are cracked using traditional methods passed down through generations.",
+      sourcingStory: "Our IVELLA Signature Oil is cold-pressed by women's cooperatives in the Atlas Mountains, supporting local communities while ensuring the highest quality. Each tree is hand-selected, and the kernels are cracked using traditional methods passed down through generations.",
       sustainability: "Fair Trade Certified",
       benefits: [
         "Rich in Vitamin E and essential fatty acids",
@@ -118,8 +118,7 @@ const SignatureCollectionShowcase = () => {
       helpful: 24,
       usageDuration: "3 months",
       images: [
-        "https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?w=200&h=200&fit=crop&crop=center",
-        "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=200&h=200&fit=crop&crop=center"
+        "/assets/new.jpg",
       ]
     },
     {
@@ -148,9 +147,9 @@ const SignatureCollectionShowcase = () => {
       verified: true,
       helpful: 12,
       usageDuration: "2 months",
-      images: [
-        "https://images.unsplash.com/photo-1556228578-8c89e6adf883?w=200&h=200&fit=crop&crop=center"
-      ]
+      // images: [
+      //   "https://images.unsplash.com/photo-1556228578-8c89e6adf883?w=200&h=200&fit=crop&crop=center"
+      // ]
     },
     {
       id: 4,
@@ -178,9 +177,9 @@ const SignatureCollectionShowcase = () => {
       verified: true,
       helpful: 27,
       usageDuration: "5 months",
-      images: [
-        "https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?w=200&h=200&fit=crop&crop=center"
-      ]
+      // images: [
+      //   "https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?w=200&h=200&fit=crop&crop=center"
+      // ]
     },
     {
       id: 6,
@@ -284,7 +283,7 @@ const SignatureCollectionShowcase = () => {
       location: "Beverly Hills, CA",
       experience: "15+ years",
       photo: "https://randomuser.me/api/portraits/women/50.jpg",
-      quote: "As a dermatologist specializing in hair and scalp health, I'm impressed by Ivella Luxe's commitment to ingredient purity and scientific formulation. The Moroccan Argan Elixir contains the optimal concentration of essential fatty acids and antioxidants that I look for in premium hair care products. I regularly recommend it to patients with damaged or chemically-treated hair.",
+      quote: "As a dermatologist specializing in hair and scalp health, I'm impressed by IVELLA's commitment to ingredient purity and scientific formulation. The Moroccan Argan Elixir contains the optimal concentration of essential fatty acids and antioxidants that I look for in premium hair care products. I regularly recommend it to patients with damaged or chemically-treated hair.",
       shortQuote: "The optimal concentration of essential fatty acids makes this exceptional for hair repair.",
       credentials: ["MD Dermatology", "American Board Certified", "Hair Restoration Specialist"],
       notableWork: "Featured expert on Good Morning America, author of 'Healthy Hair Science'"
@@ -296,7 +295,7 @@ const SignatureCollectionShowcase = () => {
       location: "New York, NY",
       experience: "12+ years",
       photo: "https://randomuser.me/api/portraits/men/45.jpg",
-      quote: "I've worked with A-list celebrities for over a decade, and finding products that deliver consistent, camera-ready results is crucial. Ivella Luxe's Argan Elixir has become an essential in my kit. It transforms hair texture instantly while providing lasting nourishment. My clients love how their hair feels and looks, both on set and in their daily lives.",
+      quote: "I've worked with A-list celebrities for over a decade, and finding products that deliver consistent, camera-ready results is crucial. IVELLA's Argan Elixir has become an essential in my kit. It transforms hair texture instantly while providing lasting nourishment. My clients love how their hair feels and looks, both on set and in their daily lives.",
       shortQuote: "An essential in my celebrity styling kit - delivers instant, camera-ready results.",
       credentials: ["Celebrity Stylist", "Fashion Week Expert", "Red Carpet Specialist"],
       notableWork: "Styled for Met Gala, Oscars, and major fashion campaigns"
@@ -320,7 +319,7 @@ const SignatureCollectionShowcase = () => {
       location: "Los Angeles, CA",
       experience: "8+ years",
       photo: "https://randomuser.me/api/portraits/women/30.jpg",
-      quote: "In my years of testing luxury beauty products, Ivella Luxe stands out for its authentic commitment to quality. This isn't just marketing - the results speak for themselves. My followers consistently ask about my hair routine, and this elixir is always part of my recommendation. It's become my holy grail hair product.",
+      quote: "In my years of testing luxury beauty products, IVELLA stands out for its authentic commitment to quality. This isn't just marketing - the results speak for themselves. My followers consistently ask about my hair routine, and this elixir is always part of my recommendation. It's become my holy grail hair product.",
       shortQuote: "My holy grail hair product - the results truly speak for themselves.",
       credentials: ["Beauty Editor", "Luxury Product Specialist", "Brand Consultant"],
       notableWork: "500K+ social media following, featured in Vogue and Harper's Bazaar"
@@ -370,12 +369,6 @@ const SignatureCollectionShowcase = () => {
           complementaryProducts={complementaryProducts}
           tools={tools}
         /> */}
-        
-        <StickyCartPreview 
-          product={product}
-          onAddToCart={handleAddToCart}
-          onViewCart={handleViewCart}
-        />
       </main>
     </div>
   );

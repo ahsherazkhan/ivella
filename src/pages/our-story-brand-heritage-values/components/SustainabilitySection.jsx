@@ -227,7 +227,7 @@ const SustainabilitySection = () => {
             Join Our Mission
           </h3>
           <p className="text-muted-foreground max-w-2xl mx-auto mb-8">
-            Every Ivella Luxe purchase contributes to our sustainability fund, supporting environmental restoration and women's empowerment projects worldwide.
+            Every IVELLA purchase contributes to our sustainability fund, supporting environmental restoration and women's empowerment projects worldwide.
           </p>
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-6 text-center">
             <div>

@@ -18,12 +18,12 @@ const OurStoryPage = () => {
     window.scrollTo(0, 0);
     
     // Set page title
-    document.title = 'Our Story - Brand Heritage & Values | Ivella Luxe';
+    document.title = 'Our Story - Brand Heritage & Values | IVELLA';
     
     // Add meta description
     const metaDescription = document.querySelector('meta[name="description"]');
     if (metaDescription) {
-      metaDescription?.setAttribute('content', 'Discover the inspiring story behind Ivella Luxe - from ancient beauty wisdom to modern luxury hair care. Learn about our values, sustainability commitments, and global impact.');
+      metaDescription?.setAttribute('content', 'Discover the inspiring story behind IVELLA - from ancient beauty wisdom to modern luxury hair care. Learn about our values, sustainability commitments, and global impact.');
     }
   }, []);
 
@@ -111,23 +111,8 @@ const OurStoryPage = () => {
             {/* Brand */}
             <div className="lg:col-span-2">
               <div className="flex items-center space-x-3 mb-6">
-                <div className="w-10 h-10 bg-golden-gradient rounded-full flex items-center justify-center">
-                  <svg 
-                    width="24" 
-                    height="24" 
-                    viewBox="0 0 24 24" 
-                    fill="none" 
-                    className="text-white"
-                  >
-                    <path 
-                      d="M12 2C8.5 2 6 4.5 6 8c0 2.5 1.5 4.5 3 6 1 1 2 2 3 4 1-2 2-3 3-4 1.5-1.5 3-3.5 3-6 0-3.5-2.5-6-6-6z" 
-                      fill="currentColor"
-                    />
-                    <circle cx="12" cy="8" r="2" fill="rgba(255,255,255,0.3)" />
-                  </svg>
-                </div>
                 <span className="font-heading text-2xl font-semibold text-primary">
-                  Ivella Luxe
+                  IVELLA
                 </span>
               </div>
               <p className="text-muted-foreground leading-relaxed max-w-md">
@@ -181,7 +166,7 @@ const OurStoryPage = () => {
           {/* Bottom Bar */}
           <div className="pt-8 border-t border-border flex flex-col sm:flex-row justify-between items-center space-y-4 sm:space-y-0">
             <div className="text-sm text-muted-foreground">
-              © {new Date()?.getFullYear()} Ivella Luxe. All rights reserved.
+              © {new Date()?.getFullYear()} IVELLA. All rights reserved.
             </div>
             <div className="flex items-center space-x-6">
               <div className="text-sm text-muted-foreground">

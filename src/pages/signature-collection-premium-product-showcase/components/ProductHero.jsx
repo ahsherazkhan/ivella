@@ -33,11 +33,15 @@ const ProductHero = ({ product, onAddToCart, onSubscribe }) => {
   }, [product?.id]);
 
   const productImages = [
-    "https://images.unsplash.com/photo-1596462502278-27bfdc403348?w=600&h=800&fit=crop&crop=center",
-    "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=600&h=800&fit=crop&crop=center",
-    "https://images.unsplash.com/photo-1556228578-8c89e6adf883?w=600&h=800&fit=crop&crop=center",
-    "https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?w=600&h=800&fit=crop&crop=center"
+    "/assets/1.jpg",
+    "/assets/4.jpg",
+    "/assets/2.jpg",
+    "/assets/ivella simple video.mp4"
   ];
+
+  const isVideo = (src) => {
+    return typeof src === 'string' ? src.endsWith('.mp4') || src.endsWith('.webm') || src.endsWith('.mov') : false;
+  };
 
   return (
     <div className="bg-background">
@@ -45,16 +49,31 @@ const ProductHero = ({ product, onAddToCart, onSubscribe }) => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16">
           {/* Product Images */}
           <div className="space-y-4">
-            {/* Main Image */}
+            {/* Main Image/Video */}
             <div className="relative bg-card rounded-organic overflow-hidden aspect-[4/5] group">
-              <Image
-                src={productImages?.[selectedImage]}
-                alt={`${product?.name} - View ${selectedImage + 1}`}
-                className={`w-full h-full object-cover transition-transform duration-500 ${
-                  isZoomed ? 'scale-150' : 'scale-100'
-                }`}
-                onClick={() => setIsZoomed(!isZoomed)}
-              />
+              {isVideo(productImages?.[selectedImage]) ? (
+                <video
+                  autoPlay
+                  loop
+                  muted
+                  playsInline
+                  className={`w-full h-full object-cover transition-transform duration-500 ${
+                    isZoomed ? 'scale-150' : 'scale-100'
+                  }`}
+                  onClick={() => setIsZoomed(!isZoomed)}
+                >
+                  <source src={productImages[selectedImage]} type="video/mp4" />
+                </video>
+              ) : (
+                <Image
+                  src={productImages?.[selectedImage]}
+                  alt={`${product?.name} - View ${selectedImage + 1}`}
+                  className={`w-full h-full object-cover transition-transform duration-500 ${
+                    isZoomed ? 'scale-150' : 'scale-100'
+                  }`}
+                  onClick={() => setIsZoomed(!isZoomed)}
+                />
+              )}
               
               {/* Zoom Indicator */}
               <div className="absolute top-4 right-4 bg-black/20 backdrop-blur-sm rounded-full p-2 opacity-0 group-hover:opacity-100 transition-opacity duration-200">
@@ -67,23 +86,38 @@ const ProductHero = ({ product, onAddToCart, onSubscribe }) => {
               </div>
             </div>
 
-            {/* Thumbnail Images */}
+            {/* Thumbnail Images/Videos */}
             <div className="flex space-x-3 overflow-x-auto pb-2">
               {productImages?.map((image, index) => (
                 <button
                   key={index}
                   onClick={() => setSelectedImage(index)}
-                  className={`flex-shrink-0 w-20 h-20 rounded-lg overflow-hidden border-2 transition-all duration-200 ${
+                  className={`flex-shrink-0 w-20 h-20 rounded-lg overflow-hidden border-2 transition-all duration-200 relative ${
                     selectedImage === index
                       ? 'border-primary shadow-lg'
                       : 'border-border hover:border-primary/50'
                   }`}
                 >
-                  <Image
-                    src={image}
-                    alt={`${product?.name} thumbnail ${index + 1}`}
-                    className="w-full h-full object-cover"
-                  />
+                  {isVideo(image) ? (
+                    <>
+                      <video
+                        muted
+                        playsInline
+                        className="w-full h-full object-cover"
+                      >
+                        <source src={image} type="video/mp4" />
+                      </video>
+                      <div className="absolute inset-0 flex items-center justify-center bg-black/20">
+                        <Icon name="Play" size={16} className="text-white" />
+                      </div>
+                    </>
+                  ) : (
+                    <Image
+                      src={image}
+                      alt={`${product?.name} thumbnail ${index + 1}`}
+                      className="w-full h-full object-cover"
+                    />
+                  )}
                 </button>
               ))}
             </div>

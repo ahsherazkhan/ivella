@@ -253,7 +253,7 @@ const CustomerTransformations = () => {
                 iconPosition="left"
                 onClick={() => navigate('/signature-collection-premium-product-showcase')}
               >
-                Shop {currentTransformation?.productUsed}
+                Shop
               </Button>
               {/* <Button
                 variant="outline"

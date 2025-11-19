@@ -24,12 +24,11 @@ const IngredientLibrary = () => {
   const ingredients = [
     {
       id: 1,
-      name: "Moroccan Argan Oil",
-      scientificName: "Argania spinosa",
+      name: "IVELLA Signature Oil",
       category: "Nourishing Oils",
       image: "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=600&h=400&fit=crop",
       description: "Liquid gold from Morocco's ancient argan trees, rich in vitamin E and essential fatty acids for deep hair nourishment.",
-      detailedDescription: `Moroccan Argan Oil, often called 'liquid gold,' is extracted from the kernels of the Argania spinosa tree, which grows exclusively in southwestern Morocco. This precious oil has been used for centuries by Berber women for its remarkable hair and skin benefits.\n\nRich in vitamin E, essential fatty acids, and antioxidants, argan oil penetrates deep into the hair shaft to provide intensive moisture and repair. Its unique molecular structure allows it to smooth the hair cuticle, reducing frizz and adding brilliant shine without weighing hair down.`,
+      detailedDescription: `IVELLA Signature Oil, often called 'liquid gold,' is extracted from the kernels of the Argania spinosa tree, which grows exclusively in southwestern Morocco. This precious oil has been used for centuries by Berber women for its remarkable hair and skin benefits.\n\nRich in vitamin E, essential fatty acids, and antioxidants, argan oil penetrates deep into the hair shaft to provide intensive moisture and repair. Its unique molecular structure allows it to smooth the hair cuticle, reducing frizz and adding brilliant shine without weighing hair down.`,
       origin: "Essaouira, Morocco",
       benefits: [
         "Deep moisturizing and hydration",
@@ -44,116 +43,116 @@ const IngredientLibrary = () => {
       sourcingStory: "Sourced from a women\'s cooperative in Morocco that has been perfecting argan oil extraction for generations.",
       featuredProducts: ["Signature Hair Elixir", "Intensive Repair Mask", "Daily Nourishing Serum"]
     },
-    {
-      id: 2,
-      name: "Rosehip Seed Oil",
-      scientificName: "Rosa canina",
-      category: "Botanical Extracts",
-      image: "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=600&h=400&fit=crop",
-      description: "Vitamin C powerhouse from Patagonian rosehips, promoting scalp health and hair growth with antioxidant protection.",
-      detailedDescription: `Rosehip Seed Oil is extracted from the seeds of wild rose bushes that grow in the harsh climate of Patagonia. This challenging environment produces rosehips with exceptionally high concentrations of vitamin C and essential fatty acids.\n\nThis lightweight oil is particularly beneficial for scalp health, providing the nutrients needed for healthy hair growth. Its high antioxidant content helps protect hair from environmental damage while its regenerative properties support the repair of damaged hair follicles.`,
-      origin: "Patagonia, Chile",
-      benefits: [
-        "Scalp nourishment and healing",
-        "Hair growth stimulation",
-        "Damage repair and regeneration",
-        "Antioxidant protection",
-        "Lightweight moisture",
-        "Color protection"
-      ],
-      purityScore: 9.5,
-      certifications: ["Organic", "Direct Trade", "Sustainable Sourcing"],
-      sourcingStory: "Harvested by family farms in Patagonia who have been cultivating rosehips for over 50 years.",
-      featuredProducts: ["Growth Stimulating Serum", "Scalp Treatment Oil", "Protective Leave-In Conditioner"]
-    },
-    {
-      id: 3,
-      name: "Jojoba Oil",
-      scientificName: "Simmondsia chinensis",
-      category: "Nourishing Oils",
-      image: "https://images.unsplash.com/photo-1615671524827-c1fe3973b648?w=600&h=400&fit=crop",
-      description: "Technically a wax ester that mimics natural sebum, providing balanced moisture without greasiness.",
-      detailedDescription: `Jojoba Oil is unique among hair care ingredients because it's technically not an oil at all, but a liquid wax ester that closely mimics the natural sebum produced by our scalp. This similarity allows it to regulate oil production and provide balanced moisture.\n\nNative to the Sonoran Desert, the jojoba plant produces seeds that yield this precious liquid gold. Its molecular structure is so similar to human sebum that it's readily absorbed without leaving a greasy residue, making it perfect for all hair types.`,
-      origin: "Queensland, Australia",
-      benefits: [
-        "Sebum regulation and balance",
-        "Lightweight, non-greasy moisture",
-        "Scalp health maintenance",
-        "Hair follicle cleansing",
-        "Natural shine without buildup",
-        "Long-lasting hydration"
-      ],
-      purityScore: 9.7,
-      certifications: ["Organic", "Indigenous Partnership", "Carbon Neutral"],
-      sourcingStory: "Sourced through partnership with Indigenous Australian communities using traditional knowledge.",
-      featuredProducts: ["Balancing Scalp Serum", "Lightweight Hair Oil", "Daily Moisture Mist"]
-    },
-    {
-      id: 4,
-      name: "Vitamin E Complex",
-      scientificName: "Tocopherol",
-      category: "Essential Nutrients",
-      image: "https://images.unsplash.com/photo-1559181567-c3190ca9959b?w=600&h=400&fit=crop",
-      description: "Powerful antioxidant complex that protects hair from environmental damage and supports healthy growth.",
-      detailedDescription: `Our Vitamin E Complex is a carefully balanced blend of tocopherols and tocotrienols, providing comprehensive antioxidant protection for hair and scalp. This essential nutrient is crucial for maintaining healthy hair growth and protecting against environmental damage.\n\nVitamin E works by neutralizing free radicals that can damage hair follicles and cause premature aging. It also improves blood circulation to the scalp, ensuring that hair follicles receive the nutrients they need for optimal growth.`,
-      origin: "France",
-      benefits: [
-        "Antioxidant protection",
-        "UV damage prevention",
-        "Hair strength and elasticity",
-        "Scalp circulation improvement",
-        "Free radical neutralization",
-        "Growth support"
-      ],
-      purityScore: 9.9,
-      certifications: ["Pharmaceutical Grade", "Non-GMO", "Allergen Free"],
-      sourcingStory: "Sourced from premium French suppliers using advanced extraction methods.",
-      featuredProducts: ["Antioxidant Hair Shield", "Strengthening Treatment", "UV Protection Spray"]
-    },
-    {
-      id: 5,
-      name: "Coconut Oil",
-      scientificName: "Cocos nucifera",
-      category: "Nourishing Oils",
-      image: "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=600&h=400&fit=crop",
-      description: "Virgin coconut oil with unique protein-binding properties that prevent hair damage and breakage.",
-      detailedDescription: `Virgin Coconut Oil is unique among hair oils for its ability to actually penetrate the hair shaft and bind to hair proteins, providing protection from the inside out. This molecular affinity makes it exceptionally effective at preventing protein loss during washing and styling.\n\nOur coconut oil is cold-pressed from fresh coconut meat within hours of harvesting, preserving its natural nutrients and maintaining its characteristic light, tropical scent. The high concentration of lauric acid gives it natural antimicrobial properties.`,
-      origin: "Kerala, India",
-      benefits: [
-        "Protein retention and binding",
-        "Deep conditioning",
-        "Breakage prevention",
-        "Antimicrobial scalp protection",
-        "Natural detangling",
-        "Heat protection"
-      ],
-      purityScore: 9.6,
-      certifications: ["Virgin Cold-Pressed", "Organic", "Fair Trade"],
-      sourcingStory: "Sourced from small family farms in Kerala using traditional cold-pressing methods.",
-      featuredProducts: ["Deep Conditioning Mask", "Protein Treatment", "Heat Protection Serum"]
-    },
-    {
-      id: 6,
-      name: "Tea Tree Oil",
-      scientificName: "Melaleuca alternifolia",
-      category: "Active Compounds",
-      image: "https://images.unsplash.com/photo-1615671524827-c1fe3973b648?w=600&h=400&fit=crop",
-      description: "Australian tea tree oil with powerful antimicrobial properties for scalp health and dandruff control.",
-      detailedDescription: `Tea Tree Oil from the native Australian Melaleuca alternifolia tree has been used by Aboriginal Australians for thousands of years for its healing properties. This potent essential oil contains over 100 different compounds, with terpinen-4-ol being the primary active ingredient.\n\nIts powerful antimicrobial and anti-inflammatory properties make it exceptional for treating scalp conditions like dandruff, seborrheic dermatitis, and folliculitis. When properly diluted, it provides gentle yet effective cleansing without stripping natural oils.`,
-      origin: "New South Wales, Australia",
-      benefits: [
-        "Antimicrobial scalp cleansing",
-        "Dandruff control and prevention",
-        "Seborrheic dermatitis treatment",
-        "Follicle purification",
-        "Inflammation reduction",
-        "Natural preservation"
-      ],
-      purityScore: 9.4,
-      certifications: ["100% Pure", "Steam Distilled", "Therapeutic Grade"],
-      sourcingStory: "Sustainably harvested from native Australian tea tree plantations using traditional methods.",
-      featuredProducts: ["Scalp Purifying Shampoo", "Anti-Dandruff Treatment", "Clarifying Scalp Mask"]
-    }
+    // {
+    //   id: 2,
+    //   name: "Rosehip Seed Oil",
+    //   scientificName: "Rosa canina",
+    //   category: "Botanical Extracts",
+    //   image: "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=600&h=400&fit=crop",
+    //   description: "Vitamin C powerhouse from Patagonian rosehips, promoting scalp health and hair growth with antioxidant protection.",
+    //   detailedDescription: `Rosehip Seed Oil is extracted from the seeds of wild rose bushes that grow in the harsh climate of Patagonia. This challenging environment produces rosehips with exceptionally high concentrations of vitamin C and essential fatty acids.\n\nThis lightweight oil is particularly beneficial for scalp health, providing the nutrients needed for healthy hair growth. Its high antioxidant content helps protect hair from environmental damage while its regenerative properties support the repair of damaged hair follicles.`,
+    //   origin: "Patagonia, Chile",
+    //   benefits: [
+    //     "Scalp nourishment and healing",
+    //     "Hair growth stimulation",
+    //     "Damage repair and regeneration",
+    //     "Antioxidant protection",
+    //     "Lightweight moisture",
+    //     "Color protection"
+    //   ],
+    //   purityScore: 9.5,
+    //   certifications: ["Organic", "Direct Trade", "Sustainable Sourcing"],
+    //   sourcingStory: "Harvested by family farms in Patagonia who have been cultivating rosehips for over 50 years.",
+    //   featuredProducts: ["Growth Stimulating Serum", "Scalp Treatment Oil", "Protective Leave-In Conditioner"]
+    // },
+    // {
+    //   id: 3,
+    //   name: "Jojoba Oil",
+    //   scientificName: "Simmondsia chinensis",
+    //   category: "Nourishing Oils",
+    //   image: "https://images.unsplash.com/photo-1615671524827-c1fe3973b648?w=600&h=400&fit=crop",
+    //   description: "Technically a wax ester that mimics natural sebum, providing balanced moisture without greasiness.",
+    //   detailedDescription: `Jojoba Oil is unique among hair care ingredients because it's technically not an oil at all, but a liquid wax ester that closely mimics the natural sebum produced by our scalp. This similarity allows it to regulate oil production and provide balanced moisture.\n\nNative to the Sonoran Desert, the jojoba plant produces seeds that yield this precious liquid gold. Its molecular structure is so similar to human sebum that it's readily absorbed without leaving a greasy residue, making it perfect for all hair types.`,
+    //   origin: "Queensland, Australia",
+    //   benefits: [
+    //     "Sebum regulation and balance",
+    //     "Lightweight, non-greasy moisture",
+    //     "Scalp health maintenance",
+    //     "Hair follicle cleansing",
+    //     "Natural shine without buildup",
+    //     "Long-lasting hydration"
+    //   ],
+    //   purityScore: 9.7,
+    //   certifications: ["Organic", "Indigenous Partnership", "Carbon Neutral"],
+    //   sourcingStory: "Sourced through partnership with Indigenous Australian communities using traditional knowledge.",
+    //   featuredProducts: ["Balancing Scalp Serum", "Lightweight Hair Oil", "Daily Moisture Mist"]
+    // },
+    // {
+    //   id: 4,
+    //   name: "Vitamin E Complex",
+    //   scientificName: "Tocopherol",
+    //   category: "Essential Nutrients",
+    //   image: "https://images.unsplash.com/photo-1559181567-c3190ca9959b?w=600&h=400&fit=crop",
+    //   description: "Powerful antioxidant complex that protects hair from environmental damage and supports healthy growth.",
+    //   detailedDescription: `Our Vitamin E Complex is a carefully balanced blend of tocopherols and tocotrienols, providing comprehensive antioxidant protection for hair and scalp. This essential nutrient is crucial for maintaining healthy hair growth and protecting against environmental damage.\n\nVitamin E works by neutralizing free radicals that can damage hair follicles and cause premature aging. It also improves blood circulation to the scalp, ensuring that hair follicles receive the nutrients they need for optimal growth.`,
+    //   origin: "France",
+    //   benefits: [
+    //     "Antioxidant protection",
+    //     "UV damage prevention",
+    //     "Hair strength and elasticity",
+    //     "Scalp circulation improvement",
+    //     "Free radical neutralization",
+    //     "Growth support"
+    //   ],
+    //   purityScore: 9.9,
+    //   certifications: ["Pharmaceutical Grade", "Non-GMO", "Allergen Free"],
+    //   sourcingStory: "Sourced from premium French suppliers using advanced extraction methods.",
+    //   featuredProducts: ["Antioxidant Hair Shield", "Strengthening Treatment", "UV Protection Spray"]
+    // },
+    // {
+    //   id: 5,
+    //   name: "Coconut Oil",
+    //   scientificName: "Cocos nucifera",
+    //   category: "Nourishing Oils",
+    //   image: "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=600&h=400&fit=crop",
+    //   description: "Virgin coconut oil with unique protein-binding properties that prevent hair damage and breakage.",
+    //   detailedDescription: `Virgin Coconut Oil is unique among hair oils for its ability to actually penetrate the hair shaft and bind to hair proteins, providing protection from the inside out. This molecular affinity makes it exceptionally effective at preventing protein loss during washing and styling.\n\nOur coconut oil is cold-pressed from fresh coconut meat within hours of harvesting, preserving its natural nutrients and maintaining its characteristic light, tropical scent. The high concentration of lauric acid gives it natural antimicrobial properties.`,
+    //   origin: "Kerala, India",
+    //   benefits: [
+    //     "Protein retention and binding",
+    //     "Deep conditioning",
+    //     "Breakage prevention",
+    //     "Antimicrobial scalp protection",
+    //     "Natural detangling",
+    //     "Heat protection"
+    //   ],
+    //   purityScore: 9.6,
+    //   certifications: ["Virgin Cold-Pressed", "Organic", "Fair Trade"],
+    //   sourcingStory: "Sourced from small family farms in Kerala using traditional cold-pressing methods.",
+    //   featuredProducts: ["Deep Conditioning Mask", "Protein Treatment", "Heat Protection Serum"]
+    // },
+    // {
+    //   id: 6,
+    //   name: "Tea Tree Oil",
+    //   scientificName: "Melaleuca alternifolia",
+    //   category: "Active Compounds",
+    //   image: "https://images.unsplash.com/photo-1615671524827-c1fe3973b648?w=600&h=400&fit=crop",
+    //   description: "Australian tea tree oil with powerful antimicrobial properties for scalp health and dandruff control.",
+    //   detailedDescription: `Tea Tree Oil from the native Australian Melaleuca alternifolia tree has been used by Aboriginal Australians for thousands of years for its healing properties. This potent essential oil contains over 100 different compounds, with terpinen-4-ol being the primary active ingredient.\n\nIts powerful antimicrobial and anti-inflammatory properties make it exceptional for treating scalp conditions like dandruff, seborrheic dermatitis, and folliculitis. When properly diluted, it provides gentle yet effective cleansing without stripping natural oils.`,
+    //   origin: "New South Wales, Australia",
+    //   benefits: [
+    //     "Antimicrobial scalp cleansing",
+    //     "Dandruff control and prevention",
+    //     "Seborrheic dermatitis treatment",
+    //     "Follicle purification",
+    //     "Inflammation reduction",
+    //     "Natural preservation"
+    //   ],
+    //   purityScore: 9.4,
+    //   certifications: ["100% Pure", "Steam Distilled", "Therapeutic Grade"],
+    //   sourcingStory: "Sustainably harvested from native Australian tea tree plantations using traditional methods.",
+    //   featuredProducts: ["Scalp Purifying Shampoo", "Anti-Dandruff Treatment", "Clarifying Scalp Mask"]
+    // }
   ];
 
   const tabs = [
@@ -453,13 +452,7 @@ const IngredientLibrary = () => {
           <div className="grid md:grid-cols-4 gap-8">
             <div className="md:col-span-2">
               <div className="flex items-center space-x-3 mb-4">
-                <div className="w-8 h-8 bg-golden-gradient rounded-full flex items-center justify-center">
-                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" className="text-white">
-                    <path d="M12 2C8.5 2 6 4.5 6 8c0 2.5 1.5 4.5 3 6 1 1 2 2 3 4 1-2 2-3 3-4 1.5-1.5 3-3.5 3-6 0-3.5-2.5-6-6-6z" fill="currentColor"/>
-                    <circle cx="12" cy="8" r="2" fill="rgba(255,255,255,0.3)"/>
-                  </svg>
-                </div>
-                <span className="font-heading text-2xl font-semibold">Ivella Luxe</span>
+                <span className="font-heading text-2xl font-semibold">IVELLA</span>
               </div>
               <p className="text-primary-foreground/80 mb-4">
                 Premium hair care crafted with the finest natural ingredients, 
@@ -497,7 +490,7 @@ const IngredientLibrary = () => {
           </div>
           <div className="border-t border-primary-foreground/20 mt-8 pt-8 text-center">
             <p className="text-primary-foreground/60">
-              © {new Date()?.getFullYear()} Ivella Luxe. All rights reserved.
+              © {new Date()?.getFullYear()} IVELLA. All rights reserved.
             </p>
           </div>
         </div>

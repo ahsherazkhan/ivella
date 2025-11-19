@@ -38,7 +38,7 @@ const IngredientStory = ({ ingredients }) => {
                   <div className="flex items-center space-x-4">
                     <div className="w-16 h-16 rounded-full overflow-hidden flex-shrink-0">
                       <Image
-                        src={ingredient?.image}
+                        src='/assets/1.jpg'
                         alt={ingredient?.name}
                         className="w-full h-full object-cover"
                       />

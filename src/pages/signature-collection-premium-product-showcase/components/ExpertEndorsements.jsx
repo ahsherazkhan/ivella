@@ -197,7 +197,7 @@ const ExpertEndorsements = ({ endorsements }) => {
               Join the Professional Community
             </h3>
             <p className="text-muted-foreground mb-6">
-              Discover why leading hair care professionals choose Ivella Luxe for their clients and personal use.
+              Discover why leading hair care professionals choose IVELLA for their clients and personal use.
             </p>
             <div className="flex flex-col sm:flex-row gap-3 justify-center">
               <button className="flex items-center justify-center space-x-2 px-6 py-3 bg-primary text-primary-foreground rounded-lg hover:bg-primary/90 transition-colors duration-200">

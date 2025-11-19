@@ -2,6 +2,7 @@ import React from 'react';
 import Header from '../../components/ui/Header';
 import HeroSection from './components/HeroSection';
 import IngredientSpotlight from './components/IngredientSpotlight';
+import HairGallery from './components/HairGallery';
 import CustomerTransformations from './components/CustomerTransformations';
 import RitualMoments from './components/RitualMoments';
 import TrustBadges from './components/TrustBadges';
@@ -16,6 +17,7 @@ const Homepage = () => {
       <main>
         <HeroSection />
         <IngredientSpotlight />
+        <HairGallery />
         <Certifications />
         <CustomerTransformations />
         <TrustBadges />

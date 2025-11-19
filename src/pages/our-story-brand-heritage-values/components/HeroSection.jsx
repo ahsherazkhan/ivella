@@ -27,7 +27,7 @@ const HeroSection = () => {
               Where Ancient Wisdom Meets Modern Luxury
             </h1>
             <p className="text-xl text-muted-foreground leading-relaxed max-w-2xl">
-              Born from a personal journey of hair transformation and inspired by centuries-old beauty rituals, Ivella Luxe represents the perfect harmony between nature's finest ingredients and contemporary sophistication.
+              Born from a personal journey of hair transformation and inspired by centuries-old beauty rituals, IVELLA represents the perfect harmony between nature's finest ingredients and contemporary sophistication.
             </p>
           </div>
 

@@ -108,23 +108,8 @@ const Footer = () => {
           {/* Brand Section */}
           <div className="lg:col-span-2">
             <div className="flex items-center space-x-3 mb-6">
-              <div className="w-10 h-10 bg-golden-gradient rounded-full flex items-center justify-center">
-                <svg 
-                  width="24" 
-                  height="24" 
-                  viewBox="0 0 24 24" 
-                  fill="none" 
-                  className="text-white"
-                >
-                  <path 
-                    d="M12 2C8.5 2 6 4.5 6 8c0 2.5 1.5 4.5 3 6 1 1 2 2 3 4 1-2 2-3 3-4 1.5-1.5 3-3.5 3-6 0-3.5-2.5-6-6-6z" 
-                    fill="currentColor"
-                  />
-                  <circle cx="12" cy="8" r="2" fill="rgba(255,255,255,0.3)" />
-                </svg>
-              </div>
               <span className="font-heading text-3xl font-semibold">
-                Ivella Luxe
+                IVELLA
               </span>
             </div>
             <p className="text-primary-foreground/80 leading-relaxed mb-6">
@@ -174,7 +159,7 @@ const Footer = () => {
             {/* Copyright */}
             <div className="text-center lg:text-left">
               <p className="text-primary-foreground/70">
-                © {currentYear} Ivella Luxe. All rights reserved.
+                © {currentYear} IVELLA. All rights reserved.
               </p>
               <div className="flex flex-wrap justify-center lg:justify-start gap-6 mt-2 text-sm">
                 <a href="#" className="text-primary-foreground/60 hover:text-primary-foreground/80">
@@ -193,20 +178,6 @@ const Footer = () => {
             </div>
 
             {/* Payment Methods */}
-            <div className="flex flex-col items-center lg:items-end">
-              <p className="text-primary-foreground/70 text-sm mb-3">Secure Payment Methods</p>
-              <div className="flex gap-3">
-                {paymentMethods?.map((method) => (
-                  <div
-                    key={method?.name}
-                    className="w-10 h-6 bg-primary-foreground/10 rounded flex items-center justify-center"
-                    title={method?.name}
-                  >
-                    <Icon name={method?.icon} size={16} className="text-primary-foreground/60" />
-                  </div>
-                ))}
-              </div>
-            </div>
           </div>
         </div>
       </div>

@@ -28,14 +28,6 @@ const Certifications = () => {
       },
       {
         id: 4,
-        name: "Sustainable Sourcing",
-        description: "Ethically sourced ingredients",
-        icon: "Globe",
-        color: "#FEF3C7",
-        organization: "Fair Trade"
-      },
-      {
-        id: 5,
         name: "Clean Beauty",
         description: "No harmful chemicals",
         icon: "Sparkles",
@@ -43,7 +35,7 @@ const Certifications = () => {
         organization: "Clean Beauty Council"
       },
       {
-        id: 6,
+        id: 5,
         name: "Carbon Neutral",
         description: "Net-zero carbon footprint",
         icon: "TreePine",
@@ -53,7 +45,7 @@ const Certifications = () => {
   ];
   return (
     <section className="py-16 bg-muted/10">
-      <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 mb-16">
+      <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 mb-16">
         {certifications?.map((cert) => (
           <div
             key={cert?.id}

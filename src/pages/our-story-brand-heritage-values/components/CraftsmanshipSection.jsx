@@ -158,7 +158,7 @@ const CraftsmanshipSection = () => {
             <div className="rounded-organic overflow-hidden luxury-shadow">
               <Image
                 src="https://images.unsplash.com/photo-1582719471384-894fbb16e074?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
-                alt="Ivella Luxe laboratory and production facility"
+                alt="IVELLA laboratory and production facility"
                 className="w-full h-96 object-cover"
               />
             </div>

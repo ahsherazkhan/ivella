@@ -513,13 +513,7 @@ const CustomerTransformationsGallery = () => {
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
             <div className="md:col-span-2">
               <div className="flex items-center space-x-3 mb-4">
-                <div className="w-8 h-8 bg-golden-gradient rounded-full flex items-center justify-center">
-                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" className="text-white">
-                    <path d="M12 2C8.5 2 6 4.5 6 8c0 2.5 1.5 4.5 3 6 1 1 2 2 3 4 1-2 2-3 3-4 1.5-1.5 3-3.5 3-6 0-3.5-2.5-6-6-6z" fill="currentColor"/>
-                    <circle cx="12" cy="8" r="2" fill="rgba(255,255,255,0.3)"/>
-                  </svg>
-                </div>
-                <span className="font-heading text-2xl font-semibold">Ivella Luxe</span>
+                <span className="font-heading text-2xl font-semibold">IVELLA</span>
               </div>
               <p className="text-primary-foreground/80 mb-4 max-w-md">
                 Luxury hair care crafted with nature's finest ingredients for your most beautiful hair transformation.
@@ -554,7 +548,7 @@ const CustomerTransformationsGallery = () => {
           
           <div className="border-t border-primary-foreground/20 mt-8 pt-8 text-center">
             <p className="text-primary-foreground/60">
-              © {new Date()?.getFullYear()} Ivella Luxe. All rights reserved.
+              © {new Date()?.getFullYear()} IVELLA. All rights reserved.
             </p>
           </div>
         </div>

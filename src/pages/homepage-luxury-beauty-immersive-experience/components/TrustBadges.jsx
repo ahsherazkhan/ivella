@@ -29,14 +29,6 @@ const TrustBadges = () => {
     },
     {
       id: 4,
-      name: "Sustainable Sourcing",
-      description: "Ethically sourced ingredients",
-      icon: "Globe",
-      color: "#FEF3C7",
-      organization: "Fair Trade"
-    },
-    {
-      id: 5,
       name: "Clean Beauty",
       description: "No harmful chemicals",
       icon: "Sparkles",
@@ -44,7 +36,7 @@ const TrustBadges = () => {
       organization: "Clean Beauty Council"
     },
     {
-      id: 6,
+      id: 5,
       name: "Carbon Neutral",
       description: "Net-zero carbon footprint",
       icon: "TreePine",

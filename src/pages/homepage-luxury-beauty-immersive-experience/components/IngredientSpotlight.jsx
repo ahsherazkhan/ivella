@@ -12,8 +12,7 @@ const IngredientSpotlight = () => {
   const ingredients = [
     {
       id: 1,
-      name: "Moroccan Argan Oil",
-      scientificName: "Argania Spinosa",
+      name: "IVELLA Signature Oil",
       origin: "Atlas Mountains, Morocco",
       benefits: ["Deep Hydration", "Frizz Control", "UV Protection", "Shine Enhancement"],
       description: `Hand-harvested from ancient argan trees by Berber women's cooperatives, our premium argan oil is cold-pressed within 24 hours to preserve its potent nutrients.\n\nRich in vitamin E and essential fatty acids, it penetrates deeply to repair damaged hair cuticles while providing long-lasting moisture and protection.`,
@@ -170,7 +169,7 @@ const IngredientSpotlight = () => {
             {/* Main Image */}
             <div className="relative w-full aspect-square rounded-organic overflow-hidden luxury-shadow">
               <img
-                src={currentIngredient?.image}
+                src='/assets/3.jpg'
                 alt={`${currentIngredient?.name} ingredient showcase`}
                 className="w-full h-full object-cover transition-all duration-700 ease-in-out"
               />
@@ -180,7 +179,7 @@ const IngredientSpotlight = () => {
               />
               
               {/* Floating Info Card */}
-              <div className="absolute bottom-6 left-6 right-6 bg-white/95 backdrop-blur-sm rounded-lg p-4">
+              {/* <div className="absolute bottom-6 left-6 right-6 bg-white/95 backdrop-blur-sm rounded-lg p-4">
                 <div className="flex items-center justify-between">
                   <div>
                     <p className="font-semibold text-primary">{currentIngredient?.name}</p>
@@ -191,7 +190,7 @@ const IngredientSpotlight = () => {
                     style={{ backgroundColor: currentIngredient?.color }}
                   />
                 </div>
-              </div>
+              </div> */}
             </div>
 
             {/* Ingredient Navigation */}
