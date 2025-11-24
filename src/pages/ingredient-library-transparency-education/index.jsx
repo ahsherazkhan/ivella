@@ -24,24 +24,69 @@ const IngredientLibrary = () => {
   const ingredients = [
     {
       id: 1,
-      name: "IVELLA Signature Oil",
-      category: "Nourishing Oils",
+      name: "Rosemary Extract",
+      scientificName: "Rosmarinus Officinalis",
+      category: "Botanical Extracts",
       image: "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=600&h=400&fit=crop",
-      description: "Liquid gold from Morocco's ancient argan trees, rich in vitamin E and essential fatty acids for deep hair nourishment.",
-      detailedDescription: `IVELLA Signature Oil, often called 'liquid gold,' is extracted from the kernels of the Argania spinosa tree, which grows exclusively in southwestern Morocco. This precious oil has been used for centuries by Berber women for its remarkable hair and skin benefits.\n\nRich in vitamin E, essential fatty acids, and antioxidants, argan oil penetrates deep into the hair shaft to provide intensive moisture and repair. Its unique molecular structure allows it to smooth the hair cuticle, reducing frizz and adding brilliant shine without weighing hair down.`,
-      origin: "Essaouira, Morocco",
+      description: "The Awakener - Known for centuries to revive the scalp, energize follicles, and promote balanced renewal. Its scent alone signals purity and clarity.",
+      detailedDescription: `Rosemary Extract serves as the awakener in our Triple Nourish System. Known for centuries to revive the scalp, energize follicles, and promote balanced renewal, rosemary has been a cornerstone of natural hair care traditions.\n\nOur premium rosemary extract is carefully cold-extracted to preserve its potent properties. It works by improving scalp circulation, stimulating dormant hair follicles, and providing natural antioxidant protection. Its distinctive herbal scent signals purity and clarity, making it not just a functional ingredient, but a sensory experience.`,
+      origin: "Mediterranean Region",
       benefits: [
-        "Deep moisturizing and hydration",
-        "Frizz control and smoothing",
-        "Natural shine enhancement",
-        "UV protection and color preservation",
-        "Split end repair and prevention",
-        "Scalp nourishment and health"
+        "Revives scalp with natural stimulation",
+        "Energizes dormant hair follicles",
+        "Promotes balanced renewal and growth",
+        "Provides antioxidant protection",
+        "Improves scalp circulation",
+        "Supports healthy hair growth cycles"
       ],
       purityScore: 9.8,
-      certifications: ["Certified Organic", "Fair Trade", "Cruelty Free"],
-      sourcingStory: "Sourced from a women\'s cooperative in Morocco that has been perfecting argan oil extraction for generations.",
-      featuredProducts: ["Signature Hair Elixir", "Intensive Repair Mask", "Daily Nourishing Serum"]
+      certifications: ["Organic Certified", "100% Natural", "Cruelty Free"],
+      sourcingStory: "Sourced from organic farms in the Mediterranean region, our rosemary extract is cold-extracted using pharmaceutical-grade methods to preserve its active compounds.",
+      featuredProducts: ["Triple Nourish Hair Oil"]
+    },
+    {
+      id: 2,
+      name: "Jojoba Oil",
+      scientificName: "Simmondsia Chinensis",
+      category: "Nourishing Oils",
+      image: "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=600&h=400&fit=crop",
+      description: "The Natural Harmonizer - Closest to the skin's natural sebum. Brings equilibrium, softness, and a natural glow without heaviness.",
+      detailedDescription: `Jojoba Oil serves as the natural harmonizer in our Triple Nourish System. Technically a liquid wax ester, jojoba oil is closest to the skin's natural sebum, making it the perfect harmonizer for hair and scalp health.\n\nHarvested from drought-resistant jojoba shrubs, this unique oil brings equilibrium, softness, and a natural glow without heaviness. Its molecular structure closely mimics your hair's natural oils, allowing for superior absorption without leaving a greasy residue. This makes it perfect for all hair types, from fine to thick, straight to curly.`,
+      origin: "Sonoran Desert",
+      benefits: [
+        "Mimics natural sebum for perfect balance",
+        "Lightweight, non-greasy absorption",
+        "Provides long-lasting moisture",
+        "Suitable for all hair and skin types",
+        "Regulates oil production",
+        "Natural shine without buildup"
+      ],
+      purityScore: 9.7,
+      certifications: ["First Cold Pressed", "100% Natural", "Organic"],
+      sourcingStory: "Our jojoba oil is first cold-pressed from sustainably harvested jojoba shrubs, ensuring maximum purity and nutrient preservation.",
+      featuredProducts: ["Triple Nourish Hair Oil"]
+    },
+    {
+      id: 3,
+      name: "Castor Oil",
+      scientificName: "Ricinus Communis",
+      category: "Nourishing Oils",
+      image: "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=600&h=400&fit=crop",
+      description: "The Strength Builder - Rich, potent, deeply fortifying. Encourages stronger roots, thicker strands, and nourished skin.",
+      detailedDescription: `Castor Oil acts as the strength builder in our Triple Nourish System. Rich, potent, and deeply fortifying, castor oil has been used for generations to support hair growth and strength.\n\nThis powerful botanical encourages stronger roots, thicker strands, and nourished skin. Its high ricinoleic acid content provides deep nourishment to hair follicles, supporting healthy growth cycles from the inside out. Castor oil penetrates deeply into the hair shaft and scalp, providing intensive fortification that helps transform weak, thinning hair into stronger, more resilient strands.`,
+      origin: "Ethically Sourced",
+      benefits: [
+        "Strengthens hair roots and follicles",
+        "Supports healthy growth cycles",
+        "Deeply nourishes and fortifies",
+        "Promotes thicker, stronger strands",
+        "Improves hair elasticity",
+        "Nourishes scalp and skin"
+      ],
+      purityScore: 9.6,
+      certifications: ["100% Natural", "Pure Extract", "Cruelty Free"],
+      sourcingStory: "Our castor oil is ethically sourced and cold-pressed to preserve its rich nutrients and fortifying properties.",
+      featuredProducts: ["Triple Nourish Hair Oil"]
     },
     // {
     //   id: 2,

@@ -5,44 +5,44 @@ import Icon from '../../../components/AppIcon';
 const StoryTimeline = () => {
   const timelineEvents = [
     {
-      year: "2017",
-      title: "The Awakening",
-      description: `Sarah's hair transformation journey began during a sabbatical in Morocco, where she discovered ancient Argan oil rituals passed down through generations of Berber women. The profound change in her hair's health and vitality sparked a deep curiosity about traditional beauty wisdom.`,
+      year: "The Beginning",
+      title: "The Quiet Frustration",
+      description: `After 10 years of working behind the scenes of global health brands as a pharmaceutical formulator, the founder found himself facing something unexpected: stubborn hair thinning, dull skin texture, and overall loss of vitality. He understood ingredients, but he also understood something bigger: true beauty doesn't come from chemicals alone—it comes from purity, balance, and ritual.`,
       image: "https://images.unsplash.com/photo-1544967882-6abaa7b2aa9b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
       icon: "Lightbulb"
     },
     {
-      year: "2018",
-      title: "The Research",
-      description: `Extensive travels across India, Peru, and Madagascar revealed a treasure trove of hair care secrets. Sarah collaborated with local women's cooperatives, learning about sustainable harvesting practices and the cultural significance of beauty rituals in different communities.`,
+      year: "The Research",
+      title: "Years of Study",
+      description: `Instead of choosing a quick fix, he spent years studying plant actives, clinical extraction methods, and the ancient rituals that helped people preserve their beauty for centuries. He blended this with his pharmaceutical precision to create something that didn't exist yet: a beauty brand that feels like luxury, performs like science, and works like nature intended.`,
       image: "https://images.pexels.com/photos/3762879/pexels-photo-3762879.jpeg?auto=compress&cs=tinysrgb&w=800",
       icon: "Search"
     },
     {
-      year: "2019",
-      title: "The Foundation",
-      description: `IVELLA was born in a small laboratory in San Francisco, with the first batch of signature hair oil crafted using ethically sourced ingredients. The name 'Ivella' combines 'Ivy' (representing growth and resilience) with 'Bella' (beauty in Italian).`,
+      year: "The Creation",
+      title: "Small Batches. Hand-Selected. Precise.",
+      description: `The journey began late at night in a small lab, long before Ivella had a name. After years of pharmaceutical work, the founder saw up close how many products were diluted, rushed, or built to impress—not to heal. So he began formulating for himself. Small batches. Hand-selected botanicals. Precise concentration. No shortcuts.`,
       image: "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
       icon: "Beaker"
     },
     {
-      year: "2020",
-      title: "The Community",
-      description: `Despite global challenges, Ivella's community of conscious beauty enthusiasts grew organically through word-of-mouth. The brand's commitment to supporting women's cooperatives became more crucial than ever, providing stable income during uncertain times.`,
+      year: "The Realization",
+      title: "What Changed?",
+      description: `When people around him began asking, "What changed? Your hair looks fuller—your skin looks healthier—your glow is different…" he realized he had created something rare. Ivella was never meant to be mass-produced. It was meant to be crafted.`,
       image: "https://images.pexels.com/photos/3762806/pexels-photo-3762806.jpeg?auto=compress&cs=tinysrgb&w=800",
       icon: "Users"
     },
     {
-      year: "2021",
-      title: "The Expansion",
-      description: `Launched the complete Signature Collection with five distinct formulations. Achieved B-Corp certification and established the Ivella Foundation, dedicating 2% of profits to women's education programs in ingredient-sourcing communities.`,
+      year: "The Vision",
+      title: "Three Pillars",
+      description: `That vision became Ivella—a modern beauty house built on three pillars: Purity. Performance. Ritual. Every formulation is designed to feel intentional, elegant, and deeply sensorial—inviting people not just to "use a product," but to experience a moment of care they didn't know they needed.`,
       image: "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
       icon: "TrendingUp"
     },
     {
-      year: "2024",
-      title: "The Future",
-      description: `Today, IVELLA serves over 50,000 women worldwide while maintaining our commitment to small-batch production and ethical sourcing. Our vision extends beyond beauty to creating a global network of empowered women supporting each other's success.`,
+      year: "Today",
+      title: "The Promise",
+      description: `Ivella isn't just a product—it's a promise. A promise that we will always honor your hair, respect the earth, and create with purpose. Because when you choose Ivella, you're not just taking care of your hair. You're choosing to nourish yourself naturally. No chemicals. No shortcuts. Just nature's goodness, bottled with care.`,
       image: "https://images.pexels.com/photos/3762875/pexels-photo-3762875.jpeg?auto=compress&cs=tinysrgb&w=800",
       icon: "Star"
     }
@@ -57,10 +57,10 @@ const StoryTimeline = () => {
             Our Journey
           </p>
           <h2 className="font-heading text-4xl lg:text-5xl font-semibold text-primary mb-6">
-            The Story Behind Every Drop
+            The Refined, Ritual-Driven Beauty House
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            From a personal transformation to a global movement, discover how IVELLA became a beacon of conscious luxury in the beauty industry.
+            Born from pharmaceutical expertise and a deep understanding that true beauty comes from purity, balance, and ritual. Discover how Ivella blends traditional botanical wisdom with modern research to create effective, nature-powered hair solutions.
           </p>
         </div>
 

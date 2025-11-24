@@ -24,10 +24,10 @@ const HeroSection = () => {
               Our Story
             </p>
             <h1 className="font-heading text-5xl lg:text-6xl font-semibold text-primary leading-tight">
-              Where Ancient Wisdom Meets Modern Luxury
+              Purity. Performance. Ritual.
             </h1>
             <p className="text-xl text-muted-foreground leading-relaxed max-w-2xl">
-              Born from a personal journey of hair transformation and inspired by centuries-old beauty rituals, IVELLA represents the perfect harmony between nature's finest ingredients and contemporary sophistication.
+              Ivella was born from a quiet frustration—an experienced pharmaceutical formulator, after 10 years of working behind the scenes of global health brands, found himself facing something he never expected: stubborn hair thinning, dull skin texture, and overall loss of vitality. Instead of choosing a quick fix, he spent years studying plant actives, clinical extraction methods, and the ancient rituals that helped people preserve their beauty for centuries.
             </p>
           </div>
 
@@ -80,19 +80,19 @@ const HeroSection = () => {
           {/* Floating Quote */}
           <div className="absolute -bottom-6 -left-6 bg-popover p-6 rounded-organic luxury-shadow max-w-sm">
             <p className="text-sm text-muted-foreground italic mb-2">
-              "Every woman deserves to feel the confidence that comes from truly caring for herself with nature's finest gifts."
+              "True beauty doesn't come from chemicals alone—it comes from purity, balance, and ritual. Every drop of our oils is crafted with intention: to hydrate, to strengthen, to soothe, to heal."
             </p>
             <div className="flex items-center space-x-3">
               <div className="w-10 h-10 rounded-full overflow-hidden">
                 <Image
                   src="https://images.pexels.com/photos/1239291/pexels-photo-1239291.jpeg?auto=compress&cs=tinysrgb&w=100"
-                  alt="Sarah Chen, Founder"
+                  alt="Founder"
                   className="w-full h-full object-cover"
                 />
               </div>
               <div>
-                <div className="font-medium text-foreground text-sm">Sarah Chen</div>
-                <div className="text-xs text-muted-foreground">Founder & CEO</div>
+                <div className="font-medium text-foreground text-sm">Founder</div>
+                <div className="text-xs text-muted-foreground">Lia Chin</div>
               </div>
             </div>
           </div>

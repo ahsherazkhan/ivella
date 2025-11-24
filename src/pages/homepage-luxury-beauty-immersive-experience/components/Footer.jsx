@@ -27,7 +27,7 @@ const Footer = () => {
     {
       title: "Support",
       links: [
-        { name: "Contact Us", href: "#" },
+        { name: "Contact Us", href: "mailto:contact@ivella.net" },
         { name: "FAQ", href: "#" },
         { name: "Shipping & Returns", href: "#" },
         // { name: "Size Guide", href: "#" }
@@ -45,11 +45,8 @@ const Footer = () => {
   ];
 
   const socialLinks = [
-    { name: "Instagram", icon: "Instagram", href: "#", color: "#6B7280" },
-    { name: "Facebook", icon: "Facebook", href: "#", color: "#6B7280" },
-    { name: "YouTube", icon: "Youtube", href: "#", color: "#6B7280" },
-    { name: "TikTok", icon: "Music", href: "#", color: "#6B7280" },
-    { name: "Pinterest", icon: "Pin", href: "#", color: "#6B7280" }
+    { name: "Instagram", icon: "Instagram", href: "https://www.instagram.com/ivella", color: "#6B7280" },
+    { name: "Facebook", icon: "Facebook", href: "https://www.facebook.com/ivella", color: "#6B7280" }
   ];
 
   const paymentMethods = [
@@ -113,8 +110,7 @@ const Footer = () => {
               </span>
             </div>
             <p className="text-primary-foreground/80 leading-relaxed mb-6">
-              Where ancient wisdom meets modern luxury. Transform your hair care routine 
-              into meaningful rituals of self-love with our premium natural ingredients.
+              Ivella isn't just a product—it's a promise. A promise that we will always honor your hair, respect the earth, and create with purpose. Because when you choose Ivella, you're choosing to nourish yourself naturally.
             </p>
             
             {/* Social Links */}
@@ -191,7 +187,7 @@ const Footer = () => {
             </div>
             <div className="flex items-center gap-2">
               <Icon name="Truck" size={16} />
-              <span className="text-sm">Free Shipping $75+</span>
+              <span className="text-sm">Free Shipping</span>
             </div>
             <div className="flex items-center gap-2">
               <Icon name="RotateCcw" size={16} />

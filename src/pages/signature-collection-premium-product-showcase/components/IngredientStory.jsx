@@ -15,10 +15,10 @@ const IngredientStory = ({ ingredients }) => {
         {/* Section Header */}
         <div className="text-center mb-12">
           <h2 className="font-heading text-3xl lg:text-4xl font-semibold text-foreground mb-4">
-            The Story Behind Every Drop
+            A Triple-Oil Ritual for Hair That Shines with Health
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Each ingredient is carefully sourced from trusted partners around the world, bringing you the finest botanical treasures nature has to offer.
+            Infused with pure rosemary, jojoba, and castor oils, this unisex blend nourishes from root to tip, promoting stronger, smoother, more radiant hair. Safe and effective for everyone.
           </p>
         </div>
 

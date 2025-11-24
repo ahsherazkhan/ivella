@@ -12,14 +12,39 @@ const IngredientSpotlight = () => {
   const ingredients = [
     {
       id: 1,
-      name: "IVELLA Signature Oil",
-      origin: "Atlas Mountains, Morocco",
-      benefits: ["Deep Hydration", "Frizz Control", "UV Protection", "Shine Enhancement"],
-      description: `Hand-harvested from ancient argan trees by Berber women's cooperatives, our premium argan oil is cold-pressed within 24 hours to preserve its potent nutrients.\n\nRich in vitamin E and essential fatty acids, it penetrates deeply to repair damaged hair cuticles while providing long-lasting moisture and protection.`,
+      name: "Rosemary Extract",
+      scientificName: "Rosmarinus Officinalis",
+      origin: "Mediterranean Region",
+      benefits: ["Scalp Vitality", "Follicle Awakening", "Balanced Renewal", "Natural Stimulation"],
+      description: `Known for centuries to revive the scalp, energize follicles, and promote balanced renewal. Its scent alone signals purity and clarity.\n\nRosemary extract works as the awakener in our Triple Nourish System, bringing natural stimulation to dormant hair follicles while maintaining scalp health.`,
+      image: "https://images.unsplash.com/photo-1747398690600-ffe8ecda9df1?q=80&w=2340&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      color: "#A7F3D0",
+      sustainability: "Organic Certified",
+      concentration: "Premium Extract"
+    },
+    {
+      id: 2,
+      name: "Jojoba Oil",
+      scientificName: "Simmondsia Chinensis",
+      origin: "Sonoran Desert",
+      benefits: ["Natural Harmonizer", "Sebum Balance", "Lightweight Feel", "Deep Moisture"],
+      description: `Closest to the skin's natural sebum. Brings equilibrium, softness, and a natural glow without heaviness.\n\nJojoba oil serves as the natural harmonizer in our formula, creating perfect balance between moisture and texture while leaving hair with a luxurious, non-greasy finish.`,
       image: "https://images.unsplash.com/photo-1747398690600-ffe8ecda9df1?q=80&w=2340&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       color: "#FEF3C7",
-      sustainability: "Fair Trade Certified",
-      concentration: "15%"
+      sustainability: "First Cold Pressed",
+      concentration: "Premium Grade"
+    },
+    {
+      id: 3,
+      name: "Castor Oil",
+      scientificName: "Ricinus Communis",
+      origin: "Ethically Sourced",
+      benefits: ["Strength Builder", "Root Fortification", "Growth Support", "Deep Nourishment"],
+      description: `Rich, potent, deeply fortifying. Encourages stronger roots, thicker strands, and nourished skin.\n\nCastor oil acts as the strength builder in our Triple Nourish System, providing deep fortification to hair roots while supporting healthy growth cycles from the inside out.`,
+      image: "https://images.unsplash.com/photo-1747398690600-ffe8ecda9df1?q=80&w=2340&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      color: "#E0E7FF",
+      sustainability: "100% Natural",
+      concentration: "Pure Extract"
     },
     // {
     //   id: 2,
@@ -86,10 +111,10 @@ const IngredientSpotlight = () => {
             Nature's Finest Ingredients
           </span>
           <h2 className="font-heading text-3xl md:text-4xl lg:text-5xl font-semibold mb-6">
-            Ingredient Spotlight
+            Nature's Trio for Stronger, Healthier Hair
           </h2>
           <p className="text-lg text-foreground max-w-3xl mx-auto leading-relaxed">
-            Discover the carefully sourced botanicals that make our formulations extraordinary. 
+            Our Triple Nourish Hair Oil delivers the combined power of castor for growth, rosemary for scalp vitality, and jojoba for moisture balance. Gentle, natural, and suitable for all hair and skin types.
           </p>
         </div>
 

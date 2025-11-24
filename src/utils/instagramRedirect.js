@@ -3,8 +3,8 @@
  * Handles redirecting users to Instagram profile for purchases
  */
 
-// Replace this with your actual Instagram handle
-const INSTAGRAM_HANDLE = 'sheyrazkhan';
+// Instagram handle
+const INSTAGRAM_HANDLE = 'ivella';
 
 /**
  * Redirect to Instagram profile

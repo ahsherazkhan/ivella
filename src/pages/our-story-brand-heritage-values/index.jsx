@@ -50,10 +50,10 @@ const OurStoryPage = () => {
           <div className="space-y-8">
             <div className="space-y-4">
               <h2 className="font-heading text-4xl lg:text-5xl font-semibold text-white">
-                Ready to Join Our Story?
+                Ready to Experience the Promise?
               </h2>
               <p className="text-xl text-white/90 leading-relaxed">
-                Become part of a movement that celebrates natural beauty, supports women worldwide, and creates positive change with every purchase.
+                When you choose Ivella, you're not just taking care of your hair. You're choosing to nourish yourself naturally. Every drop crafted with intention: to hydrate, to strengthen, to soothe, to heal.
               </p>
             </div>
 
@@ -116,7 +116,7 @@ const OurStoryPage = () => {
                 </span>
               </div>
               <p className="text-muted-foreground leading-relaxed max-w-md">
-                Where ancient wisdom meets modern luxury. Transforming hair care into a ritual of self-love with ethically sourced, premium natural ingredients.
+                A modern beauty house built on three pillars: Purity. Performance. Ritual. Every formulation is designed to feel intentional, elegant, and deeply sensorial—inviting you not just to "use a product," but to experience a moment of care you didn't know you needed.
               </p>
             </div>
 
@@ -156,9 +156,9 @@ const OurStoryPage = () => {
                 <div className="block text-muted-foreground">
                   Sustainability
                 </div>
-                <div className="block text-muted-foreground">
+                <a href="mailto:contact@ivella.net" className="block text-muted-foreground hover:text-primary transition-colors duration-200">
                   Contact
-                </div>
+                </a>
               </div>
             </div>
           </div>
@@ -176,9 +176,12 @@ const OurStoryPage = () => {
                 Terms of Service
               </div>
               <div className="flex items-center space-x-4">
-                <Icon name="Instagram" size={20} className="text-muted-foreground hover:text-primary cursor-pointer transition-colors duration-200" />
-                <Icon name="Facebook" size={20} className="text-muted-foreground hover:text-primary cursor-pointer transition-colors duration-200" />
-                <Icon name="Twitter" size={20} className="text-muted-foreground hover:text-primary cursor-pointer transition-colors duration-200" />
+                <a href="https://www.instagram.com/ivella" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                  <Icon name="Instagram" size={20} className="text-muted-foreground hover:text-primary cursor-pointer transition-colors duration-200" />
+                </a>
+                <a href="https://www.facebook.com/ivella" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+                  <Icon name="Facebook" size={20} className="text-muted-foreground hover:text-primary cursor-pointer transition-colors duration-200" />
+                </a>
               </div>
             </div>
           </div>

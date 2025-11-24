@@ -15,19 +15,19 @@ const HairGallery = () => {
       id: 1,
       title: "Deep Hydration",
       subtitle: "Moisture That Lasts",
-      description: "Our premium blend of argan, jojoba, and castor oils penetrates deep into the hair cuticle, creating a protective barrier that locks in moisture for up to 72 hours. Unlike surface-level treatments that wash away, our formula works at the molecular level to repair damaged cuticles and restore your hair's natural ability to retain moisture.",
-      detailedDescription: "The unique combination of fatty acids and vitamins in our signature oil blend creates a micro-emulsion that doesn't just sit on top of your hair—it becomes part of it. This deep penetration means your hair stays hydrated through multiple washes, humidity changes, and styling sessions.",
+      description: "Our premium Triple Nourish blend of rosemary, jojoba, and castor oils penetrates deep into the hair cuticle, creating a protective barrier that locks in moisture. Unlike surface-level treatments that wash away, our formula works at the molecular level to repair damaged cuticles and restore your hair's natural ability to retain moisture.",
+      detailedDescription: "The unique combination of rosemary extract, jojoba oil, and castor oil creates a synergistic blend that doesn't just sit on top of your hair—it becomes part of it. Jojoba's natural harmonizing properties, combined with castor's strength-building and rosemary's awakening effects, provide deep hydration that lasts.",
       image: "https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?q=80&w=2340&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       icon: "Droplet",
-      stat: "72hrs",
-      statLabel: "Moisture Retention",
+      stat: "Deep",
+      statLabel: "Hydration",
       features: [
         "Repairs damaged cuticles",
         "Prevents moisture loss",
         "Works for all hair types",
         "No build-up or residue"
       ],
-      keyIngredient: "Argan Oil from Morocco"
+      keyIngredient: "Jojoba Oil - The Natural Harmonizer"
     },
     {
       id: 2,
@@ -35,7 +35,7 @@ const HairGallery = () => {
       subtitle: "Smooth in Any Weather",
       description: "Experience up to 95% reduction in frizz with our advanced formula that smooths the hair cuticle and creates a protective barrier against humidity. Our blend of natural oils works to neutralize static electricity and seal the hair shaft, resulting in silky, manageable strands that stay smooth even in challenging weather conditions.",
       detailedDescription: "Frizz occurs when the hair cuticle is raised, allowing moisture to enter and exit rapidly. Our formula contains oils with the perfect molecular weight to smooth and seal the cuticle, creating a barrier that prevents humidity from penetrating while maintaining your hair's natural movement and volume.",
-      image: "https://images.unsplash.com/photo-1594736797933-d0401ba2fe65?q=80&w=2340&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      image: "https://images.unsplash.com/photo-1638640983932-dea21424691d?q=80&w=2340&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       icon: "Wind",
       stat: "95%",
       statLabel: "Frizz Reduction",
@@ -45,14 +45,14 @@ const HairGallery = () => {
         "Reduces static electricity",
         "Maintains natural volume"
       ],
-      keyIngredient: "Jojoba Oil from Arizona"
+      keyIngredient: "Rosemary Extract - The Awakener"
     },
     {
       id: 3,
       title: "Natural Shine",
       subtitle: "Radiant Without the Weight",
       description: "Achieve salon-quality shine with 100% natural ingredients that enhance your hair's inherent luster. Our lightweight formula reflects light beautifully without creating greasy buildup or weighing down your strands. The result is hair that looks healthy, feels soft, and moves naturally with every step.",
-      detailedDescription: "True shine comes from healthy, well-moisturized hair with a smooth cuticle surface. Our blend of camellia and argan oils creates a natural sheen by filling in microscopic gaps in the cuticle, allowing light to reflect evenly across each strand. This creates depth and dimension that synthetic products simply can't replicate.",
+      detailedDescription: "True shine comes from healthy, well-moisturized hair with a smooth cuticle surface. Our Triple Nourish blend creates a natural sheen by filling in microscopic gaps in the cuticle, allowing light to reflect evenly across each strand. Jojoba oil's natural harmonizing properties provide a lightweight, non-greasy finish that enhances your hair's inherent luster.",
       image: "https://images.unsplash.com/photo-1580618672591-eb180b1a973f?q=80&w=2340&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       icon: "Sparkles",
       stat: "100%",
@@ -63,7 +63,7 @@ const HairGallery = () => {
         "Enhances natural texture",
         "Long-lasting shine"
       ],
-      keyIngredient: "Camellia Oil from China"
+      keyIngredient: "Triple Nourish System"
     },
     {
       id: 4,
@@ -71,7 +71,7 @@ const HairGallery = () => {
       subtitle: "Nourish from the Root",
       description: "Healthy hair starts at the scalp. Our formula includes ingredients specifically chosen for their ability to nourish the scalp, balance oil production, and create an optimal environment for hair growth. Regular use can help reduce dryness, irritation, and flakiness while promoting stronger, healthier hair from root to tip.",
       detailedDescription: "A healthy scalp is the foundation of beautiful hair. Our blend contains anti-inflammatory and antimicrobial properties that soothe the scalp while providing essential nutrients. The lightweight formula absorbs quickly without clogging pores, making it suitable for daily use even on sensitive scalps.",
-      image: "https://images.unsplash.com/photo-1598300042247-d088f8ab3a91?q=80&w=2340&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      image: "https://images.unsplash.com/photo-1723565358502-eca503eef1c4?q=80&w=987&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       icon: "Leaf",
       stat: "4x",
       statLabel: "Stronger Hair",

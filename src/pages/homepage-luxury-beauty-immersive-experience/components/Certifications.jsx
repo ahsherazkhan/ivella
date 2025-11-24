@@ -4,43 +4,43 @@ const Certifications = () => {
   const certifications = [
       {
         id: 1,
-        name: "Cruelty-Free Certified",
-        description: "Never tested on animals",
-        icon: "Heart",
+        name: "Chemicals Free",
+        description: "No harmful chemicals",
+        icon: "Shield",
         color: "#6B7280",
-        organization: "Leaping Bunny"
+        organization: "100% Natural"
       },
       {
         id: 2,
-        name: "USDA Organic",
-        description: "95%+ organic ingredients",
+        name: "Organic",
+        description: "Pure organic ingredients",
         icon: "Leaf",
         color: "#6B7280",
-        organization: "USDA"
+        organization: "Certified"
       },
       {
         id: 3,
-        name: "Dermatologist Tested",
-        description: "Clinically proven safe",
-        icon: "Shield",
+        name: "100% Natural",
+        description: "Nature's goodness only",
+        icon: "Sparkles",
         color: "#6B7280",
-        organization: "Clinical Labs"
+        organization: "Pure"
       },
       {
         id: 4,
-        name: "Clean Beauty",
-        description: "No harmful chemicals",
-        icon: "Sparkles",
+        name: "First Cold Pressed",
+        description: "Preserves nutrients",
+        icon: "Droplets",
         color: "#6B7280",
-        organization: "Clean Beauty Council"
+        organization: "Premium"
       },
       {
         id: 5,
-        name: "Carbon Neutral",
-        description: "Net-zero carbon footprint",
-        icon: "TreePine",
+        name: "Safe & Effective",
+        description: "Suitable for all types",
+        icon: "Heart",
         color: "#6B7280",
-        organization: "Climate Neutral"
+        organization: "Tested"
       }
   ];
   return (

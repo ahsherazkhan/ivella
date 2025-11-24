@@ -1,36 +1,13 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import Image from '../../../components/AppImage';
 import Icon from '../../../components/AppIcon';
 import Button from '../../../components/ui/Button';
-import { fetchProductPrice } from '../../../utils/simplePriceService';
 import { redirectToInstagram } from '../../../utils/instagramRedirect';
 
 const ProductHero = ({ product, onAddToCart, onSubscribe }) => {
   const [selectedImage, setSelectedImage] = useState(0);
   const [isZoomed, setIsZoomed] = useState(false);
-  const [currentPrice, setCurrentPrice] = useState(product?.price || 89.99);
-  const [priceLoading, setPriceLoading] = useState(false);
-
-  // Fetch price from external source
-  useEffect(() => {
-    const loadPrice = async () => {
-      if (product?.id) {
-        setPriceLoading(true);
-        try {
-          // Fetch price from Google Sheets - replace with your actual Google Sheets URL
-          const price = await fetchProductPrice(product.id, 'https://docs.google.com/spreadsheets/d/1T1-83jUJP6nSUCSCGdfcNBO2uKYQK63K6nyJvi2-xio/edit?usp=sharing');
-          setCurrentPrice(price);
-        } catch (error) {
-          console.error('Failed to fetch price:', error);
-          // Keep the fallback price
-        } finally {
-          setPriceLoading(false);
-        }
-      }
-    };
-
-    loadPrice();
-  }, [product?.id]);
+  const currentPrice = product?.price || 44.99;
 
   const productImages = [
     "/assets/1.jpg",
@@ -98,7 +75,7 @@ const ProductHero = ({ product, onAddToCart, onSubscribe }) => {
                       : 'border-border hover:border-primary/50'
                   }`}
                 >
-                  {isVideo(image) ? (
+                  {isVideo(image) ? ( 
                     <>
                       <video
                         muted
@@ -164,28 +141,25 @@ const ProductHero = ({ product, onAddToCart, onSubscribe }) => {
             {/* Pricing */}
             <div className="space-y-4">
               <div className="flex items-baseline space-x-3">
-                {priceLoading ? (
-                  <div className="flex items-center space-x-2">
-                    <div className="animate-spin rounded-full h-6 w-6 border-b-2 border-primary"></div>
-                    <span className="text-lg text-muted-foreground">Loading price...</span>
-                  </div>
-                ) : (
-                  <>
-                    <span className="text-3xl font-semibold text-foreground">
-                      ${currentPrice?.toFixed(2)}
-                    </span>
-                    {product?.originalPrice && (
-                      <span className="text-xl text-muted-foreground line-through">
-                        ${product?.originalPrice}
-                      </span>
-                    )}
-                    {product?.originalPrice && (
-                      <span className="bg-error/10 text-error px-2 py-1 rounded text-sm font-medium">
-                        Save ${(product?.originalPrice - currentPrice)?.toFixed(2)}
-                      </span>
-                    )}
-                  </>
+                <span className="text-3xl font-semibold text-foreground">
+                  ${currentPrice?.toFixed(2)}
+                </span>
+                {product?.originalPrice && (
+                  <span className="text-xl text-muted-foreground line-through">
+                    ${product?.originalPrice}
+                  </span>
                 )}
+                {product?.originalPrice && (
+                  <span className="bg-error/10 text-error px-2 py-1 rounded text-sm font-medium">
+                    Save ${(product?.originalPrice - currentPrice)?.toFixed(2)}
+                  </span>
+                )}
+              </div>
+              
+              {/* Free Shipping Badge */}
+              <div className="flex items-center space-x-2 text-success">
+                <Icon name="Truck" size={18} className="text-success" />
+                <span className="text-sm font-medium">Free Shipping</span>
               </div>
 
               {/* Size Options */}
@@ -280,7 +254,7 @@ const ProductHero = ({ product, onAddToCart, onSubscribe }) => {
             <div className="flex items-center justify-between pt-4 border-t border-border">
               <div className="flex items-center space-x-2">
                 <Icon name="Truck" size={16} className="text-muted-foreground" />
-                <span className="text-sm text-muted-foreground">Free shipping over $75</span>
+                <span className="text-sm text-muted-foreground">Free shipping</span>
               </div>
               <div className="flex items-center space-x-2">
                 <Icon name="RotateCcw" size={16} className="text-muted-foreground" />

@@ -18,26 +18,26 @@ const SignatureCollectionShowcase = () => {
 
   // Mock product data
   const product = {
-    id: "argan-elixir-001",
-    name: "IVELLA Signature Oil",
-    description: "A luxurious blend of cold-pressed IVELLA Signature Oil and botanical extracts, designed to nourish, strengthen, and restore your hair's natural radiance. This premium elixir transforms dry, damaged hair into silky, manageable locks with a healthy shine.",
-    price: 89.99,
-    originalPrice: 119.99,
+    id: "triple-nourish-001",
+    name: "Triple Nourish Hair Oil",
+    description: "Experience the perfect blend of jojoba, rosemary, and castor oils: crafted to strengthen roots, boost shine, and deeply hydrate. A unisex, all-skin-type formula made for everyday nourishment. Infused with pure botanical extracts, this unisex blend nourishes from root to tip, promoting stronger, smoother, more radiant hair.",
+    price: 44.99,
+    originalPrice: 60,
     rating: 4.8,
     reviewCount: 287,
     image: "https://images.unsplash.com/photo-1596462502278-27bfdc403348?w=600&h=800&fit=crop&crop=center",
     sizes: [
-      { value: "30ml", label: "30ml", price: 89.99, selected: true },
+      { value: "50ml", label: "50ml", price: 44.99, selected: true },
       // { value: "50ml", label: "50ml", price: 129.99, selected: false },
       // { value: "100ml", label: "100ml", price: 199.99, selected: false }
     ],
     benefits: [
-      "Deep nourishment for all hair types",
-      "Reduces frizz and flyaways",
-      "Strengthens damaged hair",
-      "Adds natural shine and softness",
-      "Heat protection up to 450°F",
-      "Suitable for color-treated hair"
+      "Promotes visibly healthier, thicker-looking hair",
+      "Revives the scalp with natural stimulation",
+      "Enhances shine + smoothness with a single treatment",
+      "Strengthens roots and supports healthy growth cycles",
+      "Doubles as a brow + lash nourishment ritual",
+      "Clean, botanical, and ethically crafted"
     ]
   };
 
@@ -80,26 +80,70 @@ const SignatureCollectionShowcase = () => {
   // Mock ingredients data
   const ingredients = [
     {
-      name: "IVELLA Signature Oil",
-      origin: "Atlas Mountains, Morocco",
-      concentration: "45%",
-      primaryBenefit: "Deep Nourishment",
+      name: "Rosemary Extract",
+      origin: "Mediterranean Region",
+      concentration: "Premium Extract",
+      primaryBenefit: "The Awakener",
       image: "https://images.pexels.com/photos/4041392/pexels-photo-4041392.jpeg?w=200&h=200&fit=crop&crop=center",
-      sourcingStory: "Our IVELLA Signature Oil is cold-pressed by women's cooperatives in the Atlas Mountains, supporting local communities while ensuring the highest quality. Each tree is hand-selected, and the kernels are cracked using traditional methods passed down through generations.",
-      sustainability: "Fair Trade Certified",
+      sourcingStory: "Known for centuries to revive the scalp, energize follicles, and promote balanced renewal. Our rosemary extract is carefully sourced and cold-extracted to preserve its potent properties. Its scent alone signals purity and clarity, awakening both your senses and your hair's natural vitality.",
+      sustainability: "Organic Certified",
       benefits: [
-        "Rich in Vitamin E and essential fatty acids",
-        "Penetrates deeply to repair damaged hair cuticles",
-        "Provides long-lasting moisture without greasiness",
-        "Protects against environmental damage and UV rays"
+        "Revives scalp with natural stimulation",
+        "Energizes dormant hair follicles",
+        "Promotes balanced renewal and growth",
+        "Provides antioxidant protection"
       ],
-      research: "Clinical studies show 89% improvement in hair softness and 76% reduction in breakage after 4 weeks of use.",
+      research: "Studies demonstrate rosemary's ability to support scalp health and promote hair growth through improved circulation and follicle stimulation.",
       harvestingProcess: [
-        "Hand-picked from century-old trees",
-        "Sun-dried using traditional methods",
-        "Cold-pressed to preserve nutrients"
+        "Hand-selected from organic farms",
+        "Cold-extracted to preserve actives",
+        "Pharmaceutical-grade processing"
       ],
-      certifications: ["Organic", "Fair Trade", "Cruelty-Free"]
+      certifications: ["Organic", "100% Natural", "Cruelty-Free"]
+    },
+    {
+      name: "Jojoba Oil",
+      origin: "Sonoran Desert",
+      concentration: "First Cold Pressed",
+      primaryBenefit: "The Natural Harmonizer",
+      image: "https://images.pexels.com/photos/4041392/pexels-photo-4041392.jpeg?w=200&h=200&fit=crop&crop=center",
+      sourcingStory: "Closest to the skin's natural sebum, jojoba oil brings equilibrium, softness, and a natural glow without heaviness. Harvested from drought-resistant jojoba shrubs, this liquid wax closely mimics your hair's natural oils, creating perfect harmony between moisture and texture.",
+      sustainability: "First Cold Pressed",
+      benefits: [
+        "Mimics natural sebum for perfect balance",
+        "Lightweight, non-greasy absorption",
+        "Provides long-lasting moisture",
+        "Suitable for all hair and skin types"
+      ],
+      research: "Jojoba's unique molecular structure allows for superior absorption without weighing hair down, making it ideal for all hair types.",
+      harvestingProcess: [
+        "Sustainably harvested from organic sources",
+        "First cold-pressed extraction",
+        "Pharmaceutical-grade refinement"
+      ],
+      certifications: ["Organic", "100% Natural", "First Cold Pressed"]
+    },
+    {
+      name: "Castor Oil",
+      origin: "Ethically Sourced",
+      concentration: "Pure Extract",
+      primaryBenefit: "The Strength Builder",
+      image: "https://images.pexels.com/photos/4041392/pexels-photo-4041392.jpeg?w=200&h=200&fit=crop&crop=center",
+      sourcingStory: "Rich, potent, deeply fortifying. Castor oil encourages stronger roots, thicker strands, and nourished skin. This powerful botanical has been used for generations to support hair growth and strength, making it the perfect foundation for our Triple Nourish System.",
+      sustainability: "100% Natural",
+      benefits: [
+        "Strengthens hair roots and follicles",
+        "Supports healthy growth cycles",
+        "Deeply nourishes and fortifies",
+        "Promotes thicker, stronger strands"
+      ],
+      research: "Castor oil's high ricinoleic acid content has been shown to support hair growth and improve hair strength when used consistently.",
+      harvestingProcess: [
+        "Ethically sourced from trusted partners",
+        "Cold-pressed to preserve nutrients",
+        "Pure, unrefined extraction"
+      ],
+      certifications: ["100% Natural", "Organic", "Cruelty-Free"]
     },
   ];
 
@@ -283,7 +327,7 @@ const SignatureCollectionShowcase = () => {
       location: "Beverly Hills, CA",
       experience: "15+ years",
       photo: "https://randomuser.me/api/portraits/women/50.jpg",
-      quote: "As a dermatologist specializing in hair and scalp health, I'm impressed by IVELLA's commitment to ingredient purity and scientific formulation. The Moroccan Argan Elixir contains the optimal concentration of essential fatty acids and antioxidants that I look for in premium hair care products. I regularly recommend it to patients with damaged or chemically-treated hair.",
+      quote: "As a dermatologist specializing in hair and scalp health, I'm impressed by IVELLA's commitment to ingredient purity and scientific formulation. The Triple Nourish Hair Oil contains the optimal blend of rosemary, jojoba, and castor oils that I look for in premium hair care products. The pharmaceutical-grade compounding and botanical wisdom create a truly effective formula.",
       shortQuote: "The optimal concentration of essential fatty acids makes this exceptional for hair repair.",
       credentials: ["MD Dermatology", "American Board Certified", "Hair Restoration Specialist"],
       notableWork: "Featured expert on Good Morning America, author of 'Healthy Hair Science'"
@@ -295,7 +339,7 @@ const SignatureCollectionShowcase = () => {
       location: "New York, NY",
       experience: "12+ years",
       photo: "https://randomuser.me/api/portraits/men/45.jpg",
-      quote: "I've worked with A-list celebrities for over a decade, and finding products that deliver consistent, camera-ready results is crucial. IVELLA's Argan Elixir has become an essential in my kit. It transforms hair texture instantly while providing lasting nourishment. My clients love how their hair feels and looks, both on set and in their daily lives.",
+      quote: "I've worked with A-list celebrities for over a decade, and finding products that deliver consistent, camera-ready results is crucial. IVELLA's Triple Nourish Hair Oil has become an essential in my kit. It transforms hair texture instantly while providing lasting nourishment. My clients love how their hair feels and looks, both on set and in their daily lives.",
       shortQuote: "An essential in my celebrity styling kit - delivers instant, camera-ready results.",
       credentials: ["Celebrity Stylist", "Fashion Week Expert", "Red Carpet Specialist"],
       notableWork: "Styled for Met Gala, Oscars, and major fashion campaigns"
@@ -307,7 +351,7 @@ const SignatureCollectionShowcase = () => {
       location: "Miami, FL",
       experience: "10+ years",
       photo: "https://randomuser.me/api/portraits/women/40.jpg",
-      quote: "From a trichological perspective, the ingredient synergy in this elixir is remarkable. The combination of argan oil, jojoba, and rosehip creates an optimal environment for hair follicle health and cuticle repair. I've observed significant improvements in hair strength and growth patterns among my clients who use this product consistently.",
+      quote: "From a trichological perspective, the ingredient synergy in this formula is remarkable. The combination of rosemary extract, jojoba oil, and castor oil creates an optimal environment for hair follicle health and cuticle repair. The Triple Nourish System—awakening, harmonizing, and strengthening—works beautifully together. I've observed significant improvements in hair strength and growth patterns among my clients who use this product consistently.",
       shortQuote: "Remarkable ingredient synergy that promotes optimal hair follicle health.",
       credentials: ["Certified Trichologist", "Hair Loss Specialist", "Scalp Health Expert"],
       notableWork: "Published researcher in Journal of Cosmetic Dermatology"

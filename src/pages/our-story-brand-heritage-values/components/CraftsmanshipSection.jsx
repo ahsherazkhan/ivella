@@ -127,10 +127,10 @@ const CraftsmanshipSection = () => {
                 Where Magic Happens
               </h3>
               <p className="text-muted-foreground leading-relaxed mb-6">
-                Our San Francisco laboratory is where science meets artistry. Here, our team of master formulators and quality specialists work in harmony to create products that honor both tradition and innovation.
+                Our laboratory is where pharmaceutical precision meets botanical artistry. Here, our founder and team of expert formulators work in harmony to create products that honor both traditional wisdom and modern science.
               </p>
               <p className="text-muted-foreground leading-relaxed">
-                Every surface is temperature-controlled, every tool is precision-calibrated, and every process is documented to ensure consistency across batches while maintaining the artisanal touch that makes each bottle special.
+                Every formulation is crafted in small batches with pharmaceutical-grade compounding. We use cold-extracted ingredients, no synthetics or fillers, and maintain the highest standards of purity and potency. Each bottle represents our commitment to slow beauty, not mass-made products.
               </p>
             </div>
 

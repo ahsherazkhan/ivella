@@ -12,9 +12,10 @@ const HeroSection = () => {
     {
       id: 1,
       title: "Transform Your Routine Into Ritual",
-      subtitle: "Where ancient wisdom meets modern luxury",
-      primaryCta: "Shop Signature Product",
-      secondaryCta: "Learn about ingredients",
+      subtitle: "Experience the perfect blend of jojoba, rosemary, and castor oils",
+      description: "Crafted to strengthen roots, boost shine, and deeply hydrate.",
+      primaryCta: "Shop Triple Nourish",
+      secondaryCta: "Discover the ingredients",
       // backgroundImage: "https://images.unsplash.com/photo-1723565358502-eca503eef1c4?q=80&w=987&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       // backgroundImage: "https://images.unsplash.com/photo-1722029105103-c5041db883b4?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       // backgroundImage: "https://images.unsplash.com/photo-1593129747951-db31f82963da?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDI1fHx8ZW58MHx8fHx8",

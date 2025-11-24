@@ -6,49 +6,49 @@ const ValuesSection = () => {
   const values = [
     {
       icon: "Leaf",
-      title: "Sustainability First",
-      description: "Every ingredient is ethically sourced through fair trade partnerships with women\'s cooperatives worldwide.",
+      title: "Purity & Quality",
+      description: "We use only the finest natural and organic ingredients, free from harmful chemicals, to ensure your hair receives the nourishment it truly deserves.",
       details: [
-        "100% recyclable packaging",
-        "Carbon-neutral shipping",
-        "Zero-waste production process",
-        "Renewable energy facilities"
+        "100% Natural ingredients",
+        "No chemicals or shortcuts",
+        "First cold-pressed oils",
+        "Pharmaceutical-grade compounding"
       ],
       image: "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
     },
     {
       icon: "Eye",
-      title: "Radical Transparency",
-      description: "Complete ingredient traceability from source to bottle, with third-party testing for purity and potency.",
+      title: "Transparency",
+      description: "We believe in honest, clear communication about our ingredients, sourcing practices, and impact. Every ingredient is traceable, every claim is backed by science.",
       details: [
         "Full ingredient disclosure",
-        "Source farm documentation",
-        "Third-party lab testing",
-        "Supply chain visibility"
+        "Honest sourcing practices",
+        "Science-backed formulations",
+        "Clear communication"
       ],
       image: "https://images.pexels.com/photos/3762800/pexels-photo-3762800.jpeg?auto=compress&cs=tinysrgb&w=800"
     },
     {
       icon: "Heart",
-      title: "Women\'s Empowerment",
-      description: "Supporting women entrepreneurs and cooperatives globally through fair wages and long-term partnerships.",
+      title: "Care & Well-Being",
+      description: "We craft our products with love, prioritizing your hair's health and your overall wellness. Every drop is crafted with intention: to hydrate, to strengthen, to soothe, to heal.",
       details: [
-        "Fair trade partnerships",
-        "Women\'s education programs",
-        "Microfinance initiatives",
-        "Leadership development"
+        "Crafted with intention",
+        "Prioritizes hair health",
+        "Holistic wellness approach",
+        "Ritual-centered care"
       ],
       image: "https://images.pexels.com/photos/3762806/pexels-photo-3762806.jpeg?auto=compress&cs=tinysrgb&w=800"
     },
     {
       icon: "Award",
-      title: "Uncompromising Quality",
-      description: "Small-batch production ensures every bottle meets our exacting standards for efficacy and luxury.",
+      title: "Innovation Rooted in Nature",
+      description: "We blend traditional botanical wisdom with modern research to create effective, nature-powered hair solutions. Pharmaceutical precision meets natural beauty.",
       details: [
-        "Small-batch crafting",
-        "Quality control testing",
-        "Premium ingredient selection",
-        "Artisanal production methods"
+        "Traditional botanical wisdom",
+        "Modern research integration",
+        "Nature-powered solutions",
+        "Scientific confidence"
       ],
       image: "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
     }
@@ -63,10 +63,10 @@ const ValuesSection = () => {
             Our Values
           </p>
           <h2 className="font-heading text-4xl lg:text-5xl font-semibold text-primary mb-6">
-            Principles That Guide Us
+            Core Values
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            These core values shape every decision we make, from ingredient sourcing to customer relationships, ensuring IVELLA remains true to its mission.
+            These core values shape every decision we make, from ingredient sourcing to formulation, ensuring Ivella remains true to its promise: to honor your hair, respect the earth, and create with purpose.
           </p>
         </div>
 

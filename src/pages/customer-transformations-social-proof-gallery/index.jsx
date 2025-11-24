@@ -519,9 +519,12 @@ const CustomerTransformationsGallery = () => {
                 Luxury hair care crafted with nature's finest ingredients for your most beautiful hair transformation.
               </p>
               <div className="flex space-x-4">
-                <Icon name="Instagram" size={20} className="text-primary-foreground/60 hover:text-primary-foreground cursor-pointer transition-colors" />
-                <Icon name="Facebook" size={20} className="text-primary-foreground/60 hover:text-primary-foreground cursor-pointer transition-colors" />
-                <Icon name="Twitter" size={20} className="text-primary-foreground/60 hover:text-primary-foreground cursor-pointer transition-colors" />
+                <a href="https://www.instagram.com/ivella" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                  <Icon name="Instagram" size={20} className="text-primary-foreground/60 hover:text-primary-foreground cursor-pointer transition-colors" />
+                </a>
+                <a href="https://www.facebook.com/ivella" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+                  <Icon name="Facebook" size={20} className="text-primary-foreground/60 hover:text-primary-foreground cursor-pointer transition-colors" />
+                </a>
               </div>
             </div>
             
@@ -538,7 +541,7 @@ const CustomerTransformationsGallery = () => {
             <div>
               <h3 className="font-heading text-lg font-semibold mb-4">Support</h3>
               <ul className="space-y-2">
-                <li><a href="#" className="text-primary-foreground/80 hover:text-primary-foreground transition-colors">Contact Us</a></li>
+                <li><a href="mailto:contact@ivella.net" className="text-primary-foreground/80 hover:text-primary-foreground transition-colors">Contact Us</a></li>
                 <li><a href="#" className="text-primary-foreground/80 hover:text-primary-foreground transition-colors">Shipping Info</a></li>
                 <li><a href="#" className="text-primary-foreground/80 hover:text-primary-foreground transition-colors">Returns</a></li>
                 <li><a href="#" className="text-primary-foreground/80 hover:text-primary-foreground transition-colors">FAQ</a></li>

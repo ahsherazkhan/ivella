@@ -77,7 +77,8 @@ const Header = () => {
             >
               <span className={`font-heading text-2xl font-semibold transition-colors duration-300 ${
                 isScrolled ? 'text-primary' : 'text-white'
-              }`}>
+              }`} style={{ fontSize: '2rem', lineHeight: '1' }}>
+
                 IVELLA
               </span>
             </a>
