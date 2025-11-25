@@ -139,7 +139,7 @@ const CustomerTransformationsGallery = () => {
       avatar: "https://images.unsplash.com/photo-1494790108755-2616b612b786?w=100&h=100&fit=crop&crop=face",
       recentPost: {
         image: "https://images.pexels.com/photos/1036623/pexels-photo-1036623.jpeg?w=300&h=300&fit=crop",
-        caption: "6 months with @ivellaluxe and my hair has never been healthier! The Nourishing Hair Oil is my holy grail. #IvellaRitual #HairTransformation",
+        caption: "6 months with @IVELLA and my hair has never been healthier! The Nourishing Hair Oil is my holy grail. #IvellaRitual #HairTransformation",
         likes: "1.2K",
         comments: "89",
         shares: "34"
@@ -154,7 +154,7 @@ const CustomerTransformationsGallery = () => {
       avatar: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=100&h=100&fit=crop&crop=face",
       recentPost: {
         image: "https://images.pexels.com/photos/1181690/pexels-photo-1181690.jpeg?w=300&h=300&fit=crop",
-        caption: "Curly hair girls, this is IT! My curls have never been more defined and healthy. Thank you @ivellaluxe for creating products that actually work! #CurlyHair #IvellaRitual",
+        caption: "Curly hair girls, this is IT! My curls have never been more defined and healthy. Thank you @IVELLA for creating products that actually work! #CurlyHair #IvellaRitual",
         likes: "856",
         comments: "67",
         shares: "23"
@@ -169,7 +169,7 @@ const CustomerTransformationsGallery = () => {
       avatar: "https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?w=100&h=100&fit=crop&crop=face",
       recentPost: {
         image: "https://images.pexels.com/photos/1181524/pexels-photo-1181524.jpeg?w=300&h=300&fit=crop",
-        caption: "Natural hair journey update: 4 months with @ivellaluxe products and my 4C hair is thriving! The moisture retention is incredible. #NaturalHair #IvellaRitual #HairGrowth",
+        caption: "Natural hair journey update: 4 months with @IVELLA products and my 4C hair is thriving! The moisture retention is incredible. #NaturalHair #IvellaRitual #HairGrowth",
         likes: "2.1K",
         comments: "156",
         shares: "78"

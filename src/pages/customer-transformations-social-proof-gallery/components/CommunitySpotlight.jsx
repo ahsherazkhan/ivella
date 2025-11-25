@@ -108,7 +108,7 @@ const CommunitySpotlight = ({ spotlightCustomers }) => {
             iconPosition="left"
             className="flex-1"
           >
-            Follow @IvellaLuxe
+            Follow @IVELLA
           </Button>
           <Button
             variant="default"

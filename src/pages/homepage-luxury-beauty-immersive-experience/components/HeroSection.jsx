@@ -6,6 +6,7 @@ import { useNavigate } from 'react-router-dom';
 const HeroSection = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
   const [isVideoLoaded, setIsVideoLoaded] = useState(false);
+  const [isVideoError, setIsVideoError] = useState(false);
   const navigate = useNavigate();
 
   const heroSlides = [
@@ -22,7 +23,7 @@ const HeroSection = () => {
       // backgroundImage: "https://images.unsplash.com/photo-1710587385407-8305a4515ca1?q=80&w=987&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       // backgroundImage: "https://images.unsplash.com/photo-1712481846921-d5df6dc4abfd?q=80&w=2340&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       // backgroundImage: "https://images.unsplash.com/photo-1638640983932-dea21424691d?q=80&w=2340&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      // backgroundImage: "/assets/1.jpg",
+      backgroundImage: "/assets/5.jpg",
       backgroundVideo: "/assets/ivella simple video.mp4"
     },
     // {
@@ -59,17 +60,35 @@ const HeroSection = () => {
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-background">
       {/* Background Video/Image */}
       <div className="absolute inset-0 z-0">
-        {currentHero?.backgroundVideo ? (
-          <video
-            autoPlay
-            loop
-            muted
-            playsInline
-            className="absolute inset-0 w-full h-full object-cover"
-            onLoadedData={() => setIsVideoLoaded(true)}
-          >
-            <source src={currentHero.backgroundVideo} type="video/mp4" />
-          </video>
+        {currentHero?.backgroundVideo && !isVideoError ? (
+          <>
+            {/* Fallback image while video loads */}
+            {!isVideoLoaded && currentHero?.backgroundImage && (
+              <div 
+                className="absolute inset-0 bg-cover bg-center bg-no-repeat transition-opacity duration-500"
+                style={{ backgroundImage: `url(${currentHero.backgroundImage})` }}
+              />
+            )}
+            <video
+              autoPlay
+              loop
+              muted
+              playsInline
+              preload="metadata"
+              className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-500 ${
+                isVideoLoaded ? 'opacity-100' : 'opacity-0'
+              }`}
+              poster={currentHero?.backgroundImage}
+              onLoadedData={() => setIsVideoLoaded(true)}
+              onCanPlay={() => setIsVideoLoaded(true)}
+              onError={() => {
+                setIsVideoError(true);
+                setIsVideoLoaded(false);
+              }}
+            >
+              <source src={currentHero.backgroundVideo} type="video/mp4" />
+            </video>
+          </>
         ) : currentHero?.backgroundImage ? (
           <div 
             className="absolute inset-0 bg-cover bg-center bg-no-repeat transition-all duration-1000 ease-in-out"
