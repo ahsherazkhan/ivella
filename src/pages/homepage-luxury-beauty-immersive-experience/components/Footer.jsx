@@ -113,6 +113,17 @@ const Footer = () => {
               Ivella isn't just a product—it's a promise. A promise that we will always honor your hair, respect the earth, and create with purpose. Because when you choose Ivella, you're choosing to nourish yourself naturally.
             </p>
             
+            {/* Email */}
+            <div className="flex items-center gap-2 mb-6">
+              <Icon name="Mail" size={18} className="text-primary-foreground/80" />
+              <a 
+                href="mailto:contact@ivella.net" 
+                className="text-primary-foreground/80 hover:text-primary-foreground transition-colors duration-200"
+              >
+                contact@ivella.net
+              </a>
+            </div>
+            
             {/* Social Links */}
             <div className="flex gap-4">
               {socialLinks?.map((social) => (
