@@ -519,10 +519,10 @@ const CustomerTransformationsGallery = () => {
                 Luxury hair care crafted with nature's finest ingredients for your most beautiful hair transformation.
               </p>
               <div className="flex space-x-4">
-                <a href="https://www.instagram.com/ivella" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                <a href="https://www.instagram.com/ivellaofficial/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
                   <Icon name="Instagram" size={20} className="text-primary-foreground/60 hover:text-primary-foreground cursor-pointer transition-colors" />
                 </a>
-                <a href="https://www.facebook.com/ivella" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+                <a href="https://www.facebook.com/profile.php?id=61584310796035" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
                   <Icon name="Facebook" size={20} className="text-primary-foreground/60 hover:text-primary-foreground cursor-pointer transition-colors" />
                 </a>
               </div>

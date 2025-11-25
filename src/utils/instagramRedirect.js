@@ -4,7 +4,7 @@
  */
 
 // Instagram handle
-const INSTAGRAM_HANDLE = 'ivella';
+const INSTAGRAM_HANDLE = 'ivellaofficial';
 
 /**
  * Redirect to Instagram profile

@@ -176,10 +176,10 @@ const OurStoryPage = () => {
                 Terms of Service
               </div>
               <div className="flex items-center space-x-4">
-                <a href="https://www.instagram.com/ivella" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                <a href="https://www.instagram.com/ivellaofficial/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
                   <Icon name="Instagram" size={20} className="text-muted-foreground hover:text-primary cursor-pointer transition-colors duration-200" />
                 </a>
-                <a href="https://www.facebook.com/ivella" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+                <a href="https://www.facebook.com/profile.php?id=61584310796035" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
                   <Icon name="Facebook" size={20} className="text-muted-foreground hover:text-primary cursor-pointer transition-colors duration-200" />
                 </a>
               </div>

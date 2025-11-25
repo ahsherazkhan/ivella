@@ -45,8 +45,8 @@ const Footer = () => {
   ];
 
   const socialLinks = [
-    { name: "Instagram", icon: "Instagram", href: "https://www.instagram.com/ivella", color: "#6B7280" },
-    { name: "Facebook", icon: "Facebook", href: "https://www.facebook.com/ivella", color: "#6B7280" }
+    { name: "Instagram", icon: "Instagram", href: "https://www.instagram.com/ivellaofficial/", color: "#6B7280" },
+    { name: "Facebook", icon: "Facebook", href: "https://www.facebook.com/profile.php?id=61584310796035", color: "#6B7280" }
   ];
 
   const paymentMethods = [
